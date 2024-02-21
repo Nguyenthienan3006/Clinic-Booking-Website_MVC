@@ -1,0 +1,1277 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Website_Mvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Website_Mvc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\add-billing.html",
+      "PackagePath": "staticwebassets\\Template\\add-billing.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\add-prescription.html",
+      "PackagePath": "staticwebassets\\Template\\add-prescription.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\appointment-list.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\appointment-list.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\css\\feathericon.min.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\css\\feathericon.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\feathericon.eot",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\feathericon.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\feathericon.svg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\feathericon.svg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\feathericon.ttf",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\feathericon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\feathericon.woff",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\feathericon.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\feathericond41d.eot",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\feathericond41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-05.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-06.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-07.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-08.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-09.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-10.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\doctors\\doctor-thumb-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\logo-small.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\logo-small.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\logo-white.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\logo-white.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient1.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient10.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient11.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient12.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient13.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient14.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient15.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient2.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient3.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient4.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient5.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient6.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient7.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient8.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\patients\\patient9.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\patients\\patient9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\profiles\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\profiles\\avatar-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\profiles\\avatar-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\profiles\\avatar-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\profiles\\avatar-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\profiles\\avatar-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\profiles\\avatar-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\profiles\\avatar-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\specialities\\specialities-01.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\specialities\\specialities-01.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\specialities\\specialities-02.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\specialities\\specialities-02.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\specialities\\specialities-03.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\specialities\\specialities-03.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\specialities\\specialities-04.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\specialities\\specialities-04.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\img\\specialities\\specialities-05.png",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\img\\specialities\\specialities-05.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\chart.morris.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\chart.morris.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\form-validation.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\form-validation.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\jquery.maskedinput.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\jquery.maskedinput.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\mask.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\mask.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\datatables\\datatables.min.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\datatables\\datatables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\datatables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\datatables\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\morris\\morris.css",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\morris\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\morris\\morris.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\assets\\plugins\\slimscroll\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\Template\\admin\\assets\\plugins\\slimscroll\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\blank-page.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\blank-page.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\components.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\components.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\data-tables.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\data-tables.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\doctor-list.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\doctor-list.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\error-404.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\error-404.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\error-500.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\error-500.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\forgot-password.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\forgot-password.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-basic-inputs.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-basic-inputs.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-horizontal.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-horizontal.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-input-groups.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-input-groups.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-mask.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-mask.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-validation.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-validation.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\form-vertical.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\form-vertical.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\index.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\invoice-report.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\invoice-report.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\invoice.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\invoice.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\lock-screen.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\lock-screen.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\login.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\patient-list.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\patient-list.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\profile.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\profile.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\register.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\reviews.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\reviews.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\settings.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\settings.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\specialities.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\specialities.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\tables-basic.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\tables-basic.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\admin\\transactions-list.html",
+      "PackagePath": "staticwebassets\\Template\\admin\\transactions-list.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\appointments.html",
+      "PackagePath": "staticwebassets\\Template\\appointments.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\fonts\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\fonts\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\fonts\\MaterialIcons-Regular.html",
+      "PackagePath": "staticwebassets\\Template\\assets\\fonts\\MaterialIcons-Regular.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\fonts\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\Template\\assets\\fonts\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\Template\\assets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-05.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-06.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-07.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-08.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-09.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-10.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-11.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-12.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-05.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-06.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-07.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-08.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-09.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\doctors\\doctor-thumb-10.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\doctors\\doctor-thumb-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-05.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature-06.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\features\\feature.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\features\\feature.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\icon-01.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\icon-01.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\icon-02.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\icon-02.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\icon-03.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\icon-03.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\img-02.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\img-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\img-03.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\img-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\img-04.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\img-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\location.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\location.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\login-banner.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\login-banner.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient1.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient10.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient11.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient2.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient3.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient4.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient5.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient6.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient7.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient8.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\patients\\patient9.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\patients\\patient9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\search-bg.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\search-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\search.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\specialities\\specialities-01.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\specialities\\specialities-01.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\specialities\\specialities-02.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\specialities\\specialities-02.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\specialities\\specialities-03.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\specialities\\specialities-03.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\specialities\\specialities-04.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\specialities\\specialities-04.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\specialities\\specialities-05.png",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\specialities\\specialities-05.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\img\\video-call.jpg",
+      "PackagePath": "staticwebassets\\Template\\assets\\img\\video-call.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\circle-progress.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\circle-progress.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\profile-settings.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\profile-settings.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\dropzone\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\dropzone\\dropzone.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\dropzone\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\dropzone\\dropzone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fancybox\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fancybox\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fancybox\\jquery.fancybox.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fancybox\\jquery.fancybox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fullcalendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fullcalendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fullcalendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fullcalendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\fullcalendar\\jquery.fullcalendar.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\fullcalendar\\jquery.fullcalendar.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\jquery-ui\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\jquery-ui\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\Template\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\blank-page.html",
+      "PackagePath": "staticwebassets\\Template\\blank-page.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\booking-success.html",
+      "PackagePath": "staticwebassets\\Template\\booking-success.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\booking.html",
+      "PackagePath": "staticwebassets\\Template\\booking.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\calendar.html",
+      "PackagePath": "staticwebassets\\Template\\calendar.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\change-password.html",
+      "PackagePath": "staticwebassets\\Template\\change-password.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\chat-doctor.html",
+      "PackagePath": "staticwebassets\\Template\\chat-doctor.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\chat.html",
+      "PackagePath": "staticwebassets\\Template\\chat.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\checkout.html",
+      "PackagePath": "staticwebassets\\Template\\checkout.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\components.html",
+      "PackagePath": "staticwebassets\\Template\\components.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\debug.log",
+      "PackagePath": "staticwebassets\\Template\\debug.log"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\doctor-change-password.html",
+      "PackagePath": "staticwebassets\\Template\\doctor-change-password.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\doctor-dashboard.html",
+      "PackagePath": "staticwebassets\\Template\\doctor-dashboard.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\doctor-profile-settings.html",
+      "PackagePath": "staticwebassets\\Template\\doctor-profile-settings.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\doctor-profile.html",
+      "PackagePath": "staticwebassets\\Template\\doctor-profile.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\doctor-register.html",
+      "PackagePath": "staticwebassets\\Template\\doctor-register.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\edit-billing.html",
+      "PackagePath": "staticwebassets\\Template\\edit-billing.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\edit-prescription.html",
+      "PackagePath": "staticwebassets\\Template\\edit-prescription.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\favourites.html",
+      "PackagePath": "staticwebassets\\Template\\favourites.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\forgot-password.html",
+      "PackagePath": "staticwebassets\\Template\\forgot-password.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\index-2.html",
+      "PackagePath": "staticwebassets\\Template\\index-2.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\index.html",
+      "PackagePath": "staticwebassets\\Template\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\invoice-view.html",
+      "PackagePath": "staticwebassets\\Template\\invoice-view.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\invoices.html",
+      "PackagePath": "staticwebassets\\Template\\invoices.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\login.html",
+      "PackagePath": "staticwebassets\\Template\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\my-patients.html",
+      "PackagePath": "staticwebassets\\Template\\my-patients.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\patient-dashboard.html",
+      "PackagePath": "staticwebassets\\Template\\patient-dashboard.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\patient-profile.html",
+      "PackagePath": "staticwebassets\\Template\\patient-profile.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\privacy-policy.html",
+      "PackagePath": "staticwebassets\\Template\\privacy-policy.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\profile-settings.html",
+      "PackagePath": "staticwebassets\\Template\\profile-settings.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\register.html",
+      "PackagePath": "staticwebassets\\Template\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\reviews.html",
+      "PackagePath": "staticwebassets\\Template\\reviews.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\schedule-timings.html",
+      "PackagePath": "staticwebassets\\Template\\schedule-timings.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\search.html",
+      "PackagePath": "staticwebassets\\Template\\search.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\social-media.html",
+      "PackagePath": "staticwebassets\\Template\\social-media.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\term-condition.html",
+      "PackagePath": "staticwebassets\\Template\\term-condition.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\video-call.html",
+      "PackagePath": "staticwebassets\\Template\\video-call.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\Template\\voice-call.html",
+      "PackagePath": "staticwebassets\\Template\\voice-call.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Website_Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Website_Mvc.props",
+      "PackagePath": "build\\Website_Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Website_Mvc.props",
+      "PackagePath": "buildMultiTargeting\\Website_Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Website_Mvc.props",
+      "PackagePath": "buildTransitive\\Website_Mvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
