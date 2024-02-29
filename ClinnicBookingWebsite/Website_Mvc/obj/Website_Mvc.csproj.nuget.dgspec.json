@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj": {}
+    "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\MyProject_Github\\Clinic-Booking-Website_MVC\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj": {
+    "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\MyProject_Github\\Clinic-Booking-Website_MVC\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\MyProject_Github\\Clinic-Booking-Website_MVC\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj",
         "projectName": "Website_Mvc",
-        "projectPath": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\MyProject_Github\\Clinic-Booking-Website_MVC\\ClinnicBookingWebsite\\Website_Mvc\\Website_Mvc.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\Final Project\\ClinnicBookingWebsite\\Website_Mvc\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\WorkSpace\\FPT Semester\\Spring2024\\PRN211\\MyProject_Github\\Clinic-Booking-Website_MVC\\ClinnicBookingWebsite\\Website_Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.27, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
