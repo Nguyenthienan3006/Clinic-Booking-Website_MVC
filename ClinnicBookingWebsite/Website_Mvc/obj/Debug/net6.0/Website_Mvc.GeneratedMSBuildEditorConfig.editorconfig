@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\admin\Desktop\WorkSpace\FPT Semester\Spring2024\PRN211\MyProject_Github\Clinic-Booking-Website_MVC\ClinnicBookingWebsite\Website_Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/DoctorHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9ySG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/PatientHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Shared/Error.cshtml]

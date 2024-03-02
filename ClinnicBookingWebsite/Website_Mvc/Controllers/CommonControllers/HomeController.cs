@@ -15,7 +15,10 @@ namespace Website_Mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+			HttpContext.Session.Remove("UserRole");
+			HttpContext.Session.Remove("UserRoleName");
+
+			return View();
         }
 
         public IActionResult Privacy()

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Website_Mvc.Models;
 
 namespace Website_Mvc
@@ -12,9 +12,11 @@ namespace Website_Mvc
             builder.Services.AddDbContext<ClinicBookingProjectContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+			//add session
+			builder.Services.AddSession(); 
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
+			// Add services to the container.
+			builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
@@ -29,7 +31,9 @@ namespace Website_Mvc
 
             app.UseAuthorization();
 
-            app.MapControllerRoute(
+			app.UseSession(); // Thêm dòng này để kích hoạt Session
+
+			app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
