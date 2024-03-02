@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Website_Mvc.Controllers;
 using Website_Mvc.Models;
+using Website_Mvc.Repositories;
 
 namespace Website_Mvc
 {
@@ -12,8 +14,10 @@ namespace Website_Mvc
             builder.Services.AddDbContext<ClinicBookingProjectContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-			//add session
-			builder.Services.AddSession(); 
+            builder.Services.AddScoped<CommonRepository>();
+
+            //add session
+            builder.Services.AddSession(); 
 
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
