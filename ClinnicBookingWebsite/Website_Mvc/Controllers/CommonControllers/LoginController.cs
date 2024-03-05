@@ -24,31 +24,21 @@ namespace Website_Mvc.Controllers
         {
             var user = _repository.Decentralization(username, password, HttpContext);
 
-            if (user.Roll == 1)
-            {
-                HttpContext.Session.SetString("UserRoleName", "Admin");
-            }
-            else if (user.Roll == 2)
-            {
-                HttpContext.Session.SetString("UserRoleName", "Doctor");
-            }
-            else if (user.Roll == 3)
-            {
-                HttpContext.Session.SetString("UserRoleName", "Patient");
-            }
-
             if (user != null)
             {
                 if (user.Roll == 1)
                 {
+                    HttpContext.Session.SetString("UserRoleName", "Admin");
                     return RedirectToAction("Index", "AdminHome");
                 }
                 else if (user.Roll == 2)
                 {
+                    HttpContext.Session.SetString("UserRoleName", "Doctor");
                     return RedirectToAction("Index", "DoctorHome");
                 }
                 else if (user.Roll == 3)
                 {
+                    HttpContext.Session.SetString("UserRoleName", "Patient");
                     return RedirectToAction("Index", "PatientHome");
                 }
 
