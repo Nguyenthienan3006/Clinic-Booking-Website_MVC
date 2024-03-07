@@ -1,4 +1,4 @@
-﻿@model IEnumerable<(int IdUser, string fullName, string address, string departmentName, string diseaseName, string userImage, string Image)>
+﻿@model IEnumerable<(int IdUser, string fullName, string address, string departmentName, string diseaseName, string userImage, string departmentImage, int reviewCount)>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,62 +76,59 @@
 							<div class="card-header">
 								<h4 class="card-title mb-0">Search Filter</h4>
 							</div>
+							<form action="@Url.Action("SearchDoctor", "Home")" method="GET">
 							<div class="card-body">
 								<div class="filter-widget">
 									<div class="">
-										<input type="text" class="form-control" placeholder="Search Name">
+											<input type="text" name="doctorName" class="form-control" placeholder="Search Name" value="@Html.Raw(ViewData.ModelState["doctorName"]?.AttemptedValue ?? "")">
 									</div>
 								</div>
 								<div class="filter-widget">
 									<h4>Select Specialist</h4>
 									<div>
 										<label class="custom_check">
-											<input type="checkbox" name="select_specialist" checked="">
+												<input type="checkbox" name="department" value="Urology">
 											<span class="checkmark"></span> Urology
 										</label>
 									</div>
 									<div>
 										<label class="custom_check">
-											<input type="checkbox" name="select_specialist" checked="">
+												<input type="checkbox" name="department" value="Neurology">
 											<span class="checkmark"></span> Neurology
 										</label>
 									</div>
 									<div>
 										<label class="custom_check">
-											<input type="checkbox" name="select_specialist">
+												<input type="checkbox" name="department" value="Dentist">
 											<span class="checkmark"></span> Dentist
 										</label>
 									</div>
 									<div>
 										<label class="custom_check">
-											<input type="checkbox" name="select_specialist">
+												<input type="checkbox" name="department" value="Orthopedic">
 											<span class="checkmark"></span> Orthopedic
 										</label>
 									</div>
 									<div>
 										<label class="custom_check">
-											<input type="checkbox" name="select_specialist">
-											<span class="checkmark"></span> Cardiologist
-										</label>
-									</div>
-									<div>
-										<label class="custom_check">
-											<input type="checkbox" name="select_specialist">
+												<input type="checkbox" name="department" value="Cardiologist">
 											<span class="checkmark"></span> Cardiologist
 										</label>
 									</div>
 								</div>
 								<div class="btn-search">
-									<button type="button" class="btn btn-block">Search</button>
+									<button type="submit" class="btn btn-block">Search</button>
 								</div>
 							</div>
+							</form>
 						</div>
 						<!-- /Search Filter -->
 
 					</div>
 
 					<div class="col-md-12 col-lg-8 col-xl-9">
-
+						@if (Model.Any())
+{
 						<!-- Doctor Widget -->
 						@foreach (var doctor in Model)
 						{
@@ -147,14 +144,14 @@
 										<div class="doc-info-cont">
 												<h4 class="doc-name"><a href="doctor-profile.html">@doctor.fullName</a></h4>
 											<p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
-												<h5 class="doc-department"><img src="~/Template/assets/img/specialities/@doctor.Image" class="img-fluid" alt="Speciality">@doctor.departmentName</h5>
+													<h5 class="doc-department"><img src="~/Template/assets/img/specialities/@doctor.departmentImage" class="img-fluid" alt="Speciality">@doctor.departmentName</h5>
 											<div class="rating">
 												<i class="fas fa-star filled"></i>
 												<i class="fas fa-star filled"></i>
 												<i class="fas fa-star filled"></i>
 												<i class="fas fa-star filled"></i>
 												<i class="fas fa-star"></i>
-												<span class="d-inline-block average-rating">(17)</span>
+												<span class="d-inline-block average-rating">(@doctor.reviewCount)</span>
 											</div>
 											<div class="clinic-details">
 												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> @doctor.address</p>
@@ -190,20 +187,27 @@
 									<div class="doc-info-right">
 										<div class="clini-infos">
 											<ul>
-													<li><i class="far fa-comment"></i> 17 Feedback</li>
+													<li><i class="far fa-comment"></i> @doctor.reviewCount Feedback</li>
 													<li><i class="fas fa-map-marker-alt"></i> @doctor.address</li>
 												<li><i class="far "></i></li>
 												<li><i class="far "></i><i class="fas " data-toggle="tooltip" title="Lorem Ipsum"></i> </li>
 											</ul>
 										</div>
 										<div class="clinic-booking">
-											<a class="view-pro-btn" href="doctor-profile.html">View Profile</a>
+													<a class="view-pro-btn" href="@Url.Action("ViewProfile", "Home", new { id = @doctor.IdUser })">View Profile</a>
 											<a class="apt-btn" href="booking.html">Book Appointment</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						}
+						}
+						else
+						{
+							<div class="alert alert-info" role="alert">
+								Not Found 
+							</div>
 						}
 						<!-- /Doctor Widget -->
 						<!-- Doctor Widget -->
