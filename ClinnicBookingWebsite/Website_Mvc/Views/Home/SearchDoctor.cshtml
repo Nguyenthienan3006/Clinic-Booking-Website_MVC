@@ -1,0 +1,259 @@
+﻿@model IEnumerable<(int IdUser, string fullName, string address, string departmentName, string diseaseName, string userImage, string departmentImage, int reviewCount)>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- doccure/search.html  30 Nov 2019 04:12:16 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>Doccure</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<!-- Favicons -->
+	<link href="~/Template/assets/img/favicon.png" rel="icon">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="~/Template/assets/css/bootstrap.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Datetimepicker CSS -->
+	<link rel="stylesheet" href="~/Template/assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="~/Template/assets/plugins/select2/css/select2.min.css">
+
+	<!-- Fancybox CSS -->
+	<link rel="stylesheet" href="~/Template/assets/plugins/fancybox/jquery.fancybox.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="~/Template/assets/css/style.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<!-- /Header -->
+		<!-- Breadcrumb -->
+		<div class="breadcrumb-bar">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-8 col-12">
+						<nav aria-label="breadcrumb" class="page-breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Search</li>
+							</ol>
+						</nav>
+						<h2 class="breadcrumb-title">2245 matches found for : Dentist In Bangalore</h2>
+					</div>
+					<div class="col-md-4 col-12 d-md-block d-none">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Breadcrumb -->
+		<!-- Page Content -->
+		<div class="content">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+						<!-- Search Filter -->
+						<div class="card search-filter">
+							<div class="card-header">
+								<h4 class="card-title mb-0">Search Filter</h4>
+							</div>
+							<form action="@Url.Action("SearchDoctor", "Home")" method="GET">
+							<div class="card-body">
+								<div class="filter-widget">
+									<div class="">
+											<input type="text" name="doctorName" class="form-control" placeholder="Search Name" value="@Html.Raw(ViewData.ModelState["doctorName"]?.AttemptedValue ?? "")">
+									</div>
+								</div>
+								<div class="filter-widget">
+									<h4>Select Specialist</h4>
+									<div>
+										<label class="custom_check">
+												<input type="checkbox" name="department" value="Urology">
+											<span class="checkmark"></span> Urology
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+												<input type="checkbox" name="department" value="Neurology">
+											<span class="checkmark"></span> Neurology
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+												<input type="checkbox" name="department" value="Dentist">
+											<span class="checkmark"></span> Dentist
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+												<input type="checkbox" name="department" value="Orthopedic">
+											<span class="checkmark"></span> Orthopedic
+										</label>
+									</div>
+									<div>
+										<label class="custom_check">
+												<input type="checkbox" name="department" value="Cardiologist">
+											<span class="checkmark"></span> Cardiologist
+										</label>
+									</div>
+								</div>
+								<div class="btn-search">
+									<button type="submit" class="btn btn-block">Search</button>
+								</div>
+							</div>
+							</form>
+						</div>
+						<!-- /Search Filter -->
+
+					</div>
+
+					<div class="col-md-12 col-lg-8 col-xl-9">
+						@if (Model.Any())
+{
+						<!-- Doctor Widget -->
+						@foreach (var doctor in Model)
+						{
+						<div class="card">
+							<div class="card-body">
+								<div class="doctor-widget">
+									<div class="doc-info-left">
+										<div class="doctor-img">
+											<a href="doctor-profile.html">
+												<img src="~/Template/assets/img/doctors/@doctor.userImage" class="img-fluid" alt="User Image">
+											</a>
+										</div>
+										<div class="doc-info-cont">
+												<h4 class="doc-name"><a href="doctor-profile.html">@doctor.fullName</a></h4>
+											<p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+													<h5 class="doc-department"><img src="~/Template/assets/img/specialities/@doctor.departmentImage" class="img-fluid" alt="Speciality">@doctor.departmentName</h5>
+											<div class="rating">
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star"></i>
+												<span class="d-inline-block average-rating">(@doctor.reviewCount)</span>
+											</div>
+											<div class="clinic-details">
+												<p class="doc-location"><i class="fas fa-map-marker-alt"></i> @doctor.address</p>
+												<ul class="clinic-gallery">
+													<li>
+														<a href="~/Template/assets/img/features/feature-01.jpg" data-fancybox="gallery">
+															<img src="~/Template/assets/img/features/feature-01.jpg" alt="Feature">
+														</a>
+													</li>
+													<li>
+														<a href="~/Template/assets/img/features/feature-02.jpg" data-fancybox="gallery">
+															<img src="~/Template/assets/img/features/feature-02.jpg" alt="Feature">
+														</a>
+													</li>
+													<li>
+														<a href="~/Template/assets/img/features/feature-03.jpg" data-fancybox="gallery">
+															<img src="~/Template/assets/img/features/feature-03.jpg" alt="Feature">
+														</a>
+													</li>
+													<li>
+														<a href="~/Template/assets/img/features/feature-04.jpg" data-fancybox="gallery">
+															<img src="~/Template/assets/img/features/feature-04.jpg" alt="Feature">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="clinic-services">
+												<span>@doctor.diseaseName</span>
+												 
+											</div>
+										</div>
+									</div>
+									<div class="doc-info-right">
+										<div class="clini-infos">
+											<ul>
+													<li><i class="far fa-comment"></i> @doctor.reviewCount Feedback</li>
+													<li><i class="fas fa-map-marker-alt"></i> @doctor.address</li>
+												<li><i class="far "></i></li>
+												<li><i class="far "></i><i class="fas " data-toggle="tooltip" title="Lorem Ipsum"></i> </li>
+											</ul>
+										</div>
+										<div class="clinic-booking">
+													<a class="view-pro-btn" href="@Url.Action("ViewProfile", "Home", new { id = @doctor.IdUser })">View Profile</a>
+											<a class="apt-btn" href="booking.html">Book Appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						}
+						}
+						else
+						{
+							<div class="alert alert-info" role="alert">
+								Not Found 
+							</div>
+						}
+						<!-- /Doctor Widget -->
+						<!-- Doctor Widget -->
+						
+						<!-- /Doctor Widget -->
+
+						<div class="load-more text-center">
+							<a class="btn btn-primary btn-sm" href="javascript:void(0);">Load More</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- /Page Content -->
+		<!-- Footer -->
+		<!-- /Footer -->
+
+	</div>
+	<!-- /Main Wrapper -->
+	<!-- jQuery -->
+	<script src="~/Template/assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="~/Template/assets/js/popper.min.js"></script>
+	<script src="~/Template/assets/js/bootstrap.min.js"></script>
+
+	<!-- Sticky Sidebar JS -->
+	<script src="~/Template/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+	<script src="~/Template/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="~/Template/assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Datetimepicker JS -->
+	<script src="~/Template/assets/js/moment.min.js"></script>
+	<script src="~/Template/assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Fancybox JS -->
+	<script src="~/Template/assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="~/Template/assets/js/script.js"></script>
+
+</body>
+
+<!-- doccure/search.html  30 Nov 2019 04:12:16 GMT -->
+</html>
