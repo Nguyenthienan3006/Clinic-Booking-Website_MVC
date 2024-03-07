@@ -1,0 +1,348 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- doccure/login.html  30 Nov 2019 04:12:20 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Doccure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link href="~/Template/assets/img/favicon.png" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Template/assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+   <style>
+        #dayList li.selected {
+            background-color: #4CAF50; /* Màu nền khi ngày được chọn */
+            color: white; /* Màu chữ khi ngày được chọn */
+        }
+   </style>
+</head>
+<body class="account-page">
+
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-12">
+                    <nav aria-label="breadcrumb" class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Booking</li>
+                        </ol>
+                    </nav>
+                    <h2 class="breadcrumb-title">Booking</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+    <!-- Page Content -->
+    <div class="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="booking-doc-info">
+                                <a href="doctor-profile.html" class="booking-doc-img">
+                                    <img src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+                                </a>
+                                <div class="booking-info">
+                                    <h4><a href="doctor-profile.html">Dr. Darren Elder</a></h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="d-inline-block average-rating">35</span>
+                                    </div>
+                                    <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schedule Widget -->
+                    <h3>Choose Date:</h3>
+                    <div class="card booking-schedule schedule-widget">
+
+                        <!-- Schedule Header -->
+                        <div class="schedule-header">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Day Slot -->
+                                    <div class="day-slot">
+                                        <ul id="dayList">
+                                            <li class="left-arrow">
+                                                <a href="#">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                </a>
+                                            </li>
+                                            <script>
+                                                var currentDate = new Date();
+                                                for (var i = 0; i < 7; i++) {
+                                                    var day = new Date();
+                                                    day.setDate(currentDate.getDate() + i);
+                                                    var dayOfWeek = day.toLocaleDateString('en-US', { weekday: 'short' });
+                                                    var dateOfMonth = day.toLocaleDateString('en-US', { day: 'numeric' });
+                                                    var month = day.toLocaleDateString('en-US', { month: 'short' });
+                                                    var year = day.getFullYear();
+
+                                                    // Kiểm tra xem i có phải là ngày bạn đang chọn không
+                                                    var isActive = i === 0; // Thay đổi giá trị này tùy thuộc vào việc bạn muốn chọn ngày nào
+
+                                                    document.write(
+                                                        '<li onclick="selectDate(this)">' +
+                                                        '<span>' + dayOfWeek + '</span>' +
+                                                        '<span class="slot-date">' + dateOfMonth + ' ' + month + '<small class="slot-year">' + year + '</small></span>' +
+                                                        '</li>'
+                                                    );
+                                                }
+
+
+                                            </script>
+                                            <li class="right-arrow">
+                                                <a href="#">
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /Day Slot -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Schedule Content -->
+                        <div class="schedule-cont">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <!-- Time Slot -->
+                                    <div class="time-slot">
+                                        <ul class="clearfix">
+
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>9:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>10:00</span> <span>AM</span>
+                                                </a>
+                                                <a class="timing" href="#" onclick="selectTime(this)">
+                                                    <span>11:00</span> <span>AM</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /Time Slot -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Schedule Content -->
+                    </div>
+                    <!-- /Schedule Widget -->
+
+
+                    <!-- Submit Section -->
+                    <div class="submit-section proceed-btn text-right">
+                        @* <a href="checkout.html" class="btn btn-primary submit-btn" onclick="proceedToPay() ">Proceed to Pay</a> *@
+                        <a href="javascript:void(0);" class="btn btn-primary submit-btn" onclick="proceedToPay()">Proceed to Pay</a>
+                    </div>
+                    <!-- /Submit Section -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Page Content -->
+    <!-- jQuery -->
+    <script src="~/Template/assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/Template/assets/js/popper.min.js"></script>
+    <script src="~/Template/assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="~/Template/assets/js/script.js"></script>
+
+
+    <script>
+        // Hàm chọn khung giờ
+        function selectTime(element) {
+            // Loại bỏ lớp 'selected' từ tất cả các thẻ 'a'
+            var allTimings = document.querySelectorAll('.time-slot a.timing');
+            allTimings.forEach(function (timing) {
+                timing.classList.remove('selected');
+            });
+
+            // Thêm lớp 'selected' cho thẻ 'a' được nhấp vào
+            element.classList.add('selected');
+        }
+
+
+        // Hàm chọn ngày
+        function selectDate(element) {
+            // Loại bỏ lớp 'active' từ tất cả các thẻ 'li'
+            var allDates = document.querySelectorAll('#dayList li');
+            allDates.forEach(function (date) {
+                date.classList.remove('active', 'selected'); // Xóa cả lớp 'selected' nếu có
+            });
+
+            // Thêm lớp 'active' cho thẻ 'li' được nhấp vào
+            element.classList.add('active');
+
+            // Thêm lớp 'selected' để đổi màu ngày đã chọn
+            element.classList.add('selected');
+        }
+
+
+
+        function proceedToPay() {
+            var selectedTime = document.querySelector('.time-slot a.timing.selected span');
+            var selectedDate = document.querySelector('.active .slot-date');
+
+
+
+
+            // Log để kiểm tra xem các phần tử được chọn có tồn tại không
+            console.log('Selected Time:', selectedTime);
+            console.log('Selected Date:', selectedDate);
+
+
+            // Kiểm tra xem phần tử đã được chọn có tồn tại hay không
+            if (selectedTime && selectedDate) {
+                // Lấy thông tin ngày và thời gian đã chọn
+                var dateOfMonth = selectedDate.innerText.trim();
+                var selectedTimeText = selectedTime.innerText.trim();
+
+                // Kết hợp thông tin để có ngày đầy đủ
+                var dateTimeInfo = dateOfMonth + ' ' + selectedTimeText;
+
+                // Đối với mục đích kiểm tra, hiển thị thông tin đã lấy được
+                alert('Ngày và thời gian đã chọn: ' + dateTimeInfo);
+
+                // Thêm 7 giờ vào thời gian đã chọn
+                var selectedDateTime = new Date(dateTimeInfo);
+                selectedDateTime.setHours(selectedDateTime.getHours() + 7);
+
+                // Format selectedDateTime as "2024-03-01 10:00:00.000"
+                var formattedDateTime = selectedDateTime.toISOString().slice(0, 23).replace("T", " ");
+
+
+
+                console.log('Selected Date:', dateTimeInfo);
+                console.log('Selected Time:', selectedTimeText);
+                console.log('full time1:', dateOfMonth);
+                console.log('final time:', formattedDateTime);
+
+
+
+                // Tiếp tục chuyển hướng hoặc thực hiện các xử lý khác ở đây
+                var checkoutURL = '/Booking/CheckOut?datetime=' + encodeURIComponent(dateTimeInfo);
+                window.location.href = checkoutURL;
+            } else {
+                alert('Vui lòng chọn ngày và thời gian trước khi tiếp tục.');
+            }
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+<!-- doccure/login.html  30 Nov 2019 04:12:20 GMT -->
+</html>
