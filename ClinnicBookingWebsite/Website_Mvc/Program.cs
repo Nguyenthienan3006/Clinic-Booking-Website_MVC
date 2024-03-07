@@ -15,6 +15,7 @@ namespace Website_Mvc
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<CommonRepository>();
+            builder.Services.AddScoped<PatientRepository>();
 
             //add session
             builder.Services.AddSession(); 
