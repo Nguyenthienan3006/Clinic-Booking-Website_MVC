@@ -26,14 +26,10 @@
 
 					<!-- Search -->
 					<div class="search-box">
-						<form action="templateshub.net">
-							<div class="form-group search-location">
-								<input type="text" class="form-control" placeholder="Search Location">
-								<span class="form-text">Based on your Location</span>
-							</div>
+						<form method="get" action="@Url.Action("SearchDoctor", "Home")">
 							<div class="form-group search-info">
-								<input type="text" class="form-control" placeholder="Search Doctors, Clinics, Hospitals, Diseases Etc">
-								<span class="form-text">Ex : Dental or Sugar Check up etc</span>
+								<input type="text" name="doctorName" class="form-control" placeholder="Search Doctors">
+								<span class="form-text">Ex : Johnson</span>
 							</div>
 							<button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
 						</form>

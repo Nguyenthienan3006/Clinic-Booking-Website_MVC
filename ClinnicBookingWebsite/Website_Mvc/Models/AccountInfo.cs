@@ -13,7 +13,7 @@ namespace Website_Mvc.Models
         public string? Phonenumber { get; set; }
         public string? Address { get; set; }
         public string? Email { get; set; }
-
+        public string? User_Image { get; set; }
         public virtual Account IdUserNavigation { get; set; } = null!;
     }
 }

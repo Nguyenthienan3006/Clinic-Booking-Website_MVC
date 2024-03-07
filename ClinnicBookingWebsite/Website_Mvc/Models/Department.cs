@@ -12,6 +12,8 @@ namespace Website_Mvc.Models
 
         public string DepartmentId { get; set; } = null!;
         public string? DepartmentName { get; set; }
+        public string? Department_Image { get; set; }
+
 
         public virtual DoctorDepartment? DoctorDepartment { get; set; }
         public virtual ICollection<Disease> Diseases { get; set; }
