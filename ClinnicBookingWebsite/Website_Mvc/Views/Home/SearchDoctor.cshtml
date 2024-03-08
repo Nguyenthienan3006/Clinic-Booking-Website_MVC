@@ -196,7 +196,7 @@ string userImage, string departmentImage, int reviewCount)>
 										</div>
 										<div class="clinic-booking">
 													<a class="view-pro-btn" href="@Url.Action("ViewProfile", "Home", new { id = @doctor.IdUser })">View Profile</a>
-											<a class="apt-btn" href="booking.html">Book Appointment</a>
+													<a class="apt-btn" href="@Url.Action("Index", "Booking", new { id = @doctor.IdUser })">Book Appointment</a>
 										</div>
 									</div>
 								</div>

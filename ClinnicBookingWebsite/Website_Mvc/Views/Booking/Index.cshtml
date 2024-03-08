@@ -1,5 +1,6 @@
 ﻿@{
     var listDiseases = ViewBag.ListDiseases as SelectList;
+    var doctor = ViewBag.DoctorInfo;
 }
 
 <!DOCTYPE html>
@@ -235,7 +236,7 @@
                                     <img src="~/Template/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
                                 </a>
                                 <div class="booking-info">
-                                    <h4><a href="doctor-profile.html">Dr. Darren Elder</a></h4>
+                                    <h4><a href="doctor-profile.html">Dr. @doctor.FirstName @doctor.LastName</a></h4>
                                     <div class="rating">
                                         <i class="fas fa-star filled"></i>
                                         <i class="fas fa-star filled"></i>
@@ -244,7 +245,7 @@
                                         <i class="fas fa-star"></i>
                                         <span class="d-inline-block average-rating">35</span>
                                     </div>
-                                    <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
+                                    <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> @doctor.Address </p>
                                 </div>
                             </div>
 
@@ -309,13 +310,8 @@
         function proceedToPay() {
             var selectedTime = document.querySelector('.time-slot a.timing.selected span');
             var selectedDate = document.querySelector('.active .slot-date');
-
-
-
-
-            // Log để kiểm tra xem các phần tử được chọn có tồn tại không
-            console.log('Selected Time:', selectedTime);
-            console.log('Selected Date:', selectedDate);
+            var selectedDisease = document.getElementById('selectDisease').value; // Lấy giá trị được chọn từ DropDownList
+            var description = document.getElementById('txtDescription').value;
 
 
             // Kiểm tra xem phần tử đã được chọn có tồn tại hay không
@@ -327,8 +323,10 @@
                 // Kết hợp thông tin để có ngày đầy đủ
                 var dateTimeInfo = dateOfMonth + ' ' + selectedTimeText;
 
-                // Đối với mục đích kiểm tra, hiển thị thông tin đã lấy được
+                // kiểm tra, hiển thị thông tin đã lấy được
                 alert('Ngày và thời gian đã chọn: ' + dateTimeInfo);
+                alert('Bệnh được chọn: ' + selectedDisease);
+                alert('Mô tả bệnh: ' + description);
 
                 // Thêm 7 giờ vào thời gian đã chọn
                 var selectedDateTime = new Date(dateTimeInfo);
@@ -339,15 +337,19 @@
 
 
 
-                console.log('Selected Date:', dateTimeInfo);
-                console.log('Selected Time:', selectedTimeText);
-                console.log('full time1:', dateOfMonth);
+                //console.log('Selected Date:', dateTimeInfo);
+
                 console.log('final time:', formattedDateTime);
 
-
+                console.log('Selected Time:', selectedTimeText);
+                console.log('full time1:', dateOfMonth);
 
                 // Tiếp tục chuyển hướng hoặc thực hiện các xử lý khác ở đây
-                var checkoutURL = '/Booking/CheckOut?datetime=' + encodeURIComponent(dateTimeInfo);
+                var checkoutURL = '/Booking/CheckOut?date=' + encodeURIComponent(dateOfMonth) +
+                    '&time=' + encodeURIComponent(selectedTimeText) +
+                    '&selectedDisease=' + encodeURIComponent(selectedDisease) +
+                    '&description=' + encodeURIComponent(description) +
+                    '&userId=' + @doctor.IdUser;
                 window.location.href = checkoutURL;
             } else {
                 alert('Vui lòng chọn ngày và thời gian trước khi tiếp tục.');

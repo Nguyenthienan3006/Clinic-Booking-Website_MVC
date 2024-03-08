@@ -45,5 +45,17 @@ namespace Website_Mvc.Repositories
 
             return diseases;
         }
+
+        public AccountInfo GetDoctorById(int id)
+        {
+            AccountInfo accountInfo = _context.AccountInfos.FirstOrDefault(a => a.IdUser == id);
+
+            if(accountInfo != null)
+            {
+                return accountInfo;
+            }
+
+            return null;
+        }
     }
 }
