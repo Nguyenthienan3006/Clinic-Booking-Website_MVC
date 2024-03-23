@@ -60,26 +60,30 @@
     <!-- Page Content -->
     <div class="content">
         <div class="container">
-
-            <div class="row">
-                <div class="col-12">
-
-                    <div>
-                        <div class="form-group">
-                            <label for="selectDisease">Choose Disease:</label>
-                            @* <select class="form-control" id="selectDisease">
-                                <option value="flu">Flu</option>
-                                <option value="headache">Headache</option>
-                                <option value="back-pain">Back Pain</option>
-                                <!-- Thêm các tùy chọn khác nếu cần -->
-                            </select> *@
-                            @Html.DropDownList("selectDisease", listDiseases, new { @class = "form-control" })
-                        </div>
-                        <div class="form-group">
-                            <label for="txtDescription">Description:</label>
-                            <input type="text" class="form-control" id="txtDescription" placeholder="Enter your description">
+            <div class="card">
+                <div class="card-body">
+                    <div class="booking-doc-info">
+                        <a href="doctor-profile.html" class="booking-doc-img">
+                            <img src="~/Template/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+                        </a>
+                        <div class="booking-info">
+                            <h4><a href="doctor-profile.html">Dr. @doctor.FirstName @doctor.LastName</a></h4>
+                            <div class="rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="d-inline-block average-rating">35</span>
+                            </div>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> @doctor.Address </p>
                         </div>
                     </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
 
                     <!-- Schedule Widget -->
                     <h3>Choose Date:</h3>
@@ -227,30 +231,22 @@
                         <!-- /Schedule Content -->
                     </div>
                     <!-- /Schedule Widget -->
+                    <div>
+                        <div class="form-group">
+                            <label for="selectDisease">Choose Disease:</label>
 
-
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="booking-doc-info">
-                                <a href="doctor-profile.html" class="booking-doc-img">
-                                    <img src="~/Template/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
-                                </a>
-                                <div class="booking-info">
-                                    <h4><a href="doctor-profile.html">Dr. @doctor.FirstName @doctor.LastName</a></h4>
-                                    <div class="rating">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating">35</span>
-                                    </div>
-                                    <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> @doctor.Address </p>
-                                </div>
-                            </div>
-
+                            @Html.DropDownList("selectDisease", listDiseases, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDescription">Description:</label>
+                            <input type="text" class="form-control" id="txtDescription" placeholder="Enter your description">
                         </div>
                     </div>
+
+                   
+
+
+                  
 
                     <!-- Submit Section -->
                     <div class="submit-section proceed-btn text-right">
@@ -323,10 +319,7 @@
                 // Kết hợp thông tin để có ngày đầy đủ
                 var dateTimeInfo = dateOfMonth + ' ' + selectedTimeText;
 
-                // kiểm tra, hiển thị thông tin đã lấy được
-                alert('Ngày và thời gian đã chọn: ' + dateTimeInfo);
-                alert('Bệnh được chọn: ' + selectedDisease);
-                alert('Mô tả bệnh: ' + description);
+
 
                 // Thêm 7 giờ vào thời gian đã chọn
                 var selectedDateTime = new Date(dateTimeInfo);
@@ -348,8 +341,7 @@
                 var checkoutURL = '/Booking/CheckOut?date=' + encodeURIComponent(dateOfMonth) +
                     '&time=' + encodeURIComponent(selectedTimeText) +
                     '&selectedDisease=' + encodeURIComponent(selectedDisease) +
-                    '&description=' + encodeURIComponent(description) +
-                    '&userId=' + @doctor.IdUser;
+                    '&description=' + encodeURIComponent(description) 
                 window.location.href = checkoutURL;
             } else {
                 alert('Vui lòng chọn ngày và thời gian trước khi tiếp tục.');

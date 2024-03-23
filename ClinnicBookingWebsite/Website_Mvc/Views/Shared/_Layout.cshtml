@@ -1,4 +1,4 @@
-﻿
+﻿    
 
 @{
     var userRoll = Context.Session.GetString("UserRole");
@@ -85,21 +85,7 @@
                     }
                     @if(userRoll == "2")
                     {
-                        <li class="has-submenu">
-                            <a href="#">Doctors <i class="fas fa-chevron-down"></i></a>
-                            <ul class="submenu">
-                                <li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
-                                <li><a href="appointments.html">Appointments</a></li>
-                                <li><a href="schedule-timings.html">Schedule Timing</a></li>
-                                <li><a href="my-patients.html">Patients List</a></li>
-                                <li><a href="patient-profile.html">Patients Profile</a></li>
-                                <li><a href="chat-doctor.html">Chat</a></li>
-                                <li><a href="invoices.html">Invoices</a></li>
-                                <li><a href="doctor-profile-settings.html">Profile Settings</a></li>
-                                <li><a href="reviews.html">Reviews</a></li>
-                                <li><a href="doctor-register.html">Doctor Register</a></li>
-                            </ul>
-                        </li>
+                        
                     }
                     @if(userRoll == "3")
                     {
@@ -107,15 +93,9 @@
                             <a href="#">Patients <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="@Url.Action("SearchDoctor", "Home")">Search Doctor</a></li>
-                                <li><a href="doctor-profile.html">Doctor Profile</a></li>
+
                                 <li><a href="@Url.Action("SearchDoctor", "Home")">Booking</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="booking-success.html">Booking Success</a></li>
-                                <li><a href="patient-dashboard.html">Patient Dashboard</a></li>
-                                <li><a href="favourites.html">Favourites</a></li>
-                                <li><a href="chat.html">Chat</a></li>
-                                <li><a href="profile-settings.html">Profile Settings</a></li>
-                                <li><a href="change-password.html">Change Password</a></li>
+
                             </ul>
                         </li>
                     }
@@ -211,7 +191,7 @@
                         <!-- Footer Widget -->
                         <div class="footer-widget footer-about">
                             <div class="footer-logo">
-                                <img src="assets/img/footer-logo.png" alt="logo">
+                                <img src="~/Template/assets/img/footer-logo.png" alt="logo">
                             </div>
                             <div class="footer-about-content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -310,17 +290,17 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
-                            <div class="copyright-text">
-                                <p class="mb-0"><a href="templateshub.net">Templates Hub</a></p>
-                            </div>
+                                <div class="copyright-text">
+                                    
+                                </div>
                         </div>
                         <div class="col-md-6 col-lg-6">
 
                             <!-- Copyright Menu -->
                             <div class="copyright-menu">
                                 <ul class="policy-menu">
-                                    <li><a href="term-condition.html">Terms and Conditions</a></li>
-                                    <li><a href="privacy-policy.html">Policy</a></li>
+                                    <li><a >Terms and Conditions</a></li>
+                                    <li><a >Policy</a></li>
                                 </ul>
                             </div>
                             <!-- /Copyright Menu -->

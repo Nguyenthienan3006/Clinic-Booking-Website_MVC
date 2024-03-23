@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Booking/BookingSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Booking/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/DoctorHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9ySG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/DoctorHome/WriteFeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9ySG9tZVxXcml0ZUZlZWRiYWNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Home/DoctorProfile.cshtml]
@@ -56,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/PatientHome/FeedbackDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEhvbWVcRmVlZGJhY2tEb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/Desktop/WorkSpace/FPT Semester/Spring2024/PRN211/MyProject_Github/Clinic-Booking-Website_MVC/ClinnicBookingWebsite/Website_Mvc/Views/PatientHome/Index.cshtml]

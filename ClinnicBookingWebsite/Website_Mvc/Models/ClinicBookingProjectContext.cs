@@ -7,301 +7,346 @@ namespace Website_Mvc.Models
 {
     public partial class ClinicBookingProjectContext : DbContext
     {
-        public ClinicBookingProjectContext()
-        {
-        }
+		public ClinicBookingProjectContext()
+		{
+		}
 
-        public ClinicBookingProjectContext(DbContextOptions<ClinicBookingProjectContext> options)
-            : base(options)
-        {
-        }
+		public ClinicBookingProjectContext(DbContextOptions<ClinicBookingProjectContext> options)
+			: base(options)
+		{
+		}
 
-        public virtual DbSet<Account> Accounts { get; set; } = null!;
-        public virtual DbSet<AccountInfo> AccountInfos { get; set; } = null!;
-        public virtual DbSet<Appointment> Appointments { get; set; } = null!;
-        public virtual DbSet<AppointmentStatus> AppointmentStatuses { get; set; } = null!;
-        public virtual DbSet<Department> Departments { get; set; } = null!;
-        public virtual DbSet<Disease> Diseases { get; set; } = null!;
-        public virtual DbSet<DoctorDepartment> DoctorDepartments { get; set; } = null!;
-        public virtual DbSet<DoctorFeedbacksPatient> DoctorFeedbacksPatients { get; set; } = null!;
-        public virtual DbSet<PatientReviewsDoctor> PatientReviewsDoctors { get; set; } = null!;
-        public virtual DbSet<Roll> Rolls { get; set; } = null!;
+		public virtual DbSet<Account> Accounts { get; set; } = null!;
+		public virtual DbSet<AccountInfo> AccountInfos { get; set; } = null!;
+		public virtual DbSet<Appointment> Appointments { get; set; } = null!;
+		public virtual DbSet<AppointmentStatus> AppointmentStatuses { get; set; } = null!;
+		public virtual DbSet<Department> Departments { get; set; } = null!;
+		public virtual DbSet<Disease> Diseases { get; set; } = null!;
+		public virtual DbSet<DoctorDepartment> DoctorDepartments { get; set; } = null!;
+		public virtual DbSet<DoctorFeedbacksPatient> DoctorFeedbacksPatients { get; set; } = null!;
+		public virtual DbSet<PatientReviewsDoctor> PatientReviewsDoctors { get; set; } = null!;
+		public virtual DbSet<Roll> Rolls { get; set; } = null!;
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			if (!optionsBuilder.IsConfigured)
+			{
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server = (local); database = ClinicBookingProject; uid = sa; pwd = 123456; Trusted_Connection=True; TrustServerCertificate=True");
-            }
-        }
+				optionsBuilder.UseSqlServer("server =(local); database = ClinicBookingProject;;uid=sa;pwd=123456;");
+			}
+		}
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<Account>(entity =>
+			{
+				entity.HasKey(e => e.IdUser)
+					.HasName("PK__Account__B607F248731392D4");
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Account>(entity =>
-            {
-                entity.HasKey(e => e.IdUser)
-                    .HasName("PK__Account__B607F2480DEE9E34");
-
-                entity.ToTable("Account");
+				entity.ToTable("Account");
 
-                entity.Property(e => e.IdUser).HasColumnName("Id_user");
-
-                entity.Property(e => e.Password)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("password");
+				entity.Property(e => e.IdUser).HasColumnName("Id_user");
 
-                entity.Property(e => e.Roll).HasColumnName("roll");
+				entity.Property(e => e.Password)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("password");
 
-                entity.Property(e => e.Username)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("username");
-
-                entity.HasOne(d => d.RollNavigation)
-                    .WithMany(p => p.Accounts)
-                    .HasForeignKey(d => d.Roll)
-                    .HasConstraintName("FK__Account__roll__286302EC");
-            });
+				entity.Property(e => e.Roll).HasColumnName("roll");
 
-            modelBuilder.Entity<AccountInfo>(entity =>
-            {
-                entity.HasKey(e => e.IdUser)
-                    .HasName("PK__AccountI__B607F2480877A89E");
-
-                entity.ToTable("AccountInfo");
-
-                entity.Property(e => e.IdUser)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("Id_user");
-
-                entity.Property(e => e.Address)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("address");
-
-                entity.Property(e => e.Email)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("email");
-
-                entity.Property(e => e.Phonenumber)
-                    .HasMaxLength(15)
-                    .IsUnicode(false)
-                    .HasColumnName("phonenumber");
-
-                entity.HasOne(d => d.IdUserNavigation)
-                    .WithOne(p => p.AccountInfo)
-                    .HasForeignKey<AccountInfo>(d => d.IdUser)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__AccountIn__Id_us__2B3F6F97");
-            });
-
-            modelBuilder.Entity<Appointment>(entity =>
-            {
-                entity.HasKey(e => e.IdAppointment)
-                    .HasName("PK__Appointm__D0F3704DCD11F3C7");
-
-                entity.ToTable("Appointment");
-
-                entity.Property(e => e.IdAppointment).HasColumnName("Id_appointment");
-
-                entity.Property(e => e.AppointmentTime)
-                    .HasColumnType("datetime")
-                    .HasColumnName("appointment_time");
-
-                entity.Property(e => e.IdDisease).HasColumnName("Id_disease");
-
-                entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
-
-                entity.Property(e => e.IdPatient).HasColumnName("Id_patient");
-
-                entity.Property(e => e.PatientConditionDescription)
-                    .HasColumnType("text")
-                    .HasColumnName("patient_condition_description");
-
-                entity.Property(e => e.Status).HasColumnName("status");
-
-                entity.HasOne(d => d.IdDiseaseNavigation)
-                    .WithMany(p => p.Appointments)
-                    .HasForeignKey(d => d.IdDisease)
-                    .HasConstraintName("FK__Appointme__Id_di__398D8EEE");
-
-                entity.HasOne(d => d.IdDoctorNavigation)
-                    .WithMany(p => p.AppointmentIdDoctorNavigations)
-                    .HasForeignKey(d => d.IdDoctor)
-                    .HasConstraintName("FK__Appointme__Id_do__3A81B327");
-
-                entity.HasOne(d => d.IdPatientNavigation)
-                    .WithMany(p => p.AppointmentIdPatientNavigations)
-                    .HasForeignKey(d => d.IdPatient)
-                    .HasConstraintName("FK__Appointme__Id_pa__3B75D760");
-
-                entity.HasOne(d => d.StatusNavigation)
-                    .WithMany(p => p.Appointments)
-                    .HasForeignKey(d => d.Status)
-                    .HasConstraintName("FK__Appointme__statu__3C69FB99");
-            });
-
-            modelBuilder.Entity<AppointmentStatus>(entity =>
-            {
-                entity.HasKey(e => e.IdStatus)
-                    .HasName("PK__Appointm__9D83DA2AAC60A15E");
+				entity.Property(e => e.AccountStatus).HasColumnName("accountStatus");
 
-                entity.ToTable("AppointmentStatus");
+				entity.Property(e => e.Username)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("username");
 
-                entity.Property(e => e.IdStatus).HasColumnName("Id_status");
+				entity.HasOne(d => d.RollNavigation)
+					.WithMany(p => p.Accounts)
+					.HasForeignKey(d => d.Roll)
+					.HasConstraintName("FK__Account__roll__3B75D760");
+			});
+
+			modelBuilder.Entity<AccountInfo>(entity =>
+			{
+				entity.HasKey(e => e.IdUser)
+					.HasName("PK__AccountI__B607F248BD29B165");
+
+				entity.ToTable("AccountInfo");
+
+				entity.Property(e => e.IdUser)
+					.ValueGeneratedOnAdd()
+					.HasColumnName("Id_user");
+
+				entity.Property(e => e.Address)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("address");
 
-                entity.Property(e => e.StatusName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("status_name");
-            });
+				entity.Property(e => e.BloodGroup)
+					.HasMaxLength(3)
+					.IsUnicode(false)
+					.HasColumnName("bloodGroup");
+
+				entity.Property(e => e.DateOfBirth)
+					.HasColumnType("datetime")
+					.HasColumnName("dateOfBirth");
+
+				entity.Property(e => e.Email)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("email");
+
+				entity.Property(e => e.FirstName)
+					.HasMaxLength(15)
+					.IsUnicode(false)
+					.HasColumnName("firstName");
+
+				entity.Property(e => e.LastName)
+					.HasMaxLength(15)
+					.IsUnicode(false)
+					.HasColumnName("lastName");
+
+				entity.Property(e => e.Phonenumber)
+					.HasMaxLength(15)
+					.IsUnicode(false)
+					.HasColumnName("phonenumber");
+
+				entity.Property(e => e.User_Image)
+					.HasMaxLength(255)
+					.HasColumnName("user_image");
+
+				entity.HasOne(d => d.IdUserNavigation)
+					.WithOne(p => p.AccountInfo)
+					.HasForeignKey<AccountInfo>(d => d.IdUser)
+					.OnDelete(DeleteBehavior.ClientSetNull)
+					.HasConstraintName("FK__AccountIn__Id_us__3E52440B");
+			});
+
+			modelBuilder.Entity<Appointment>(entity =>
+			{
+				entity.HasKey(e => e.IdAppointment)
+					.HasName("PK__Appointm__D0F3704D3CEDC454");
+
+				entity.ToTable("Appointment");
+
+				entity.Property(e => e.IdAppointment).HasColumnName("Id_appointment");
+
+				entity.Property(e => e.AppointmentTime)
+					.HasColumnType("datetime")
+					.HasColumnName("appointment_time");
+
+				entity.Property(e => e.IdDisease).HasColumnName("Id_disease");
+
+				entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
+
+				entity.Property(e => e.IdPatient).HasColumnName("Id_patient");
+
+				entity.Property(e => e.PatientConditionDescription)
+					.HasColumnType("text")
+					.HasColumnName("patient_condition_description");
+
+				entity.Property(e => e.Status).HasColumnName("status");
+
+				entity.Property(e => e.TotalPrice)
+					.HasColumnType("decimal(10, 2)")
+					.HasColumnName("totalPrice");
 
-            modelBuilder.Entity<Department>(entity =>
-            {
-                entity.ToTable("Department");
-
-                entity.Property(e => e.DepartmentId)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("department_Id");
-
-                entity.Property(e => e.DepartmentName)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("department_name");
-            });
+				entity.HasOne(d => d.IdDiseaseNavigation)
+					.WithMany(p => p.Appointments)
+					.HasForeignKey(d => d.IdDisease)
+					.HasConstraintName("FK__Appointme__Id_di__49C3F6B7");
 
-            modelBuilder.Entity<Disease>(entity =>
-            {
-                entity.HasKey(e => e.IdDisease)
-                    .HasName("PK__Disease__19C3C49791568870");
+				entity.HasOne(d => d.IdDoctorNavigation)
+					.WithMany(p => p.AppointmentIdDoctorNavigations)
+					.HasForeignKey(d => d.IdDoctor)
+					.HasConstraintName("FK__Appointme__Id_do__4AB81AF0");
+
+				entity.HasOne(d => d.IdPatientNavigation)
+					.WithMany(p => p.AppointmentIdPatientNavigations)
+					.HasForeignKey(d => d.IdPatient)
+					.HasConstraintName("FK__Appointme__Id_pa__4BAC3F29");
+
+				entity.HasOne(d => d.StatusNavigation)
+					.WithMany(p => p.Appointments)
+					.HasForeignKey(d => d.Status)
+					.HasConstraintName("FK__Appointme__statu__4CA06362");
+			});
 
-                entity.ToTable("Disease");
+			modelBuilder.Entity<AppointmentStatus>(entity =>
+			{
+				entity.HasKey(e => e.IdStatus)
+					.HasName("PK__Appointm__9D83DA2A743F0973");
 
-                entity.Property(e => e.IdDisease).HasColumnName("Id_disease");
+				entity.ToTable("AppointmentStatus");
 
-                entity.Property(e => e.DiseaseName)
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("disease_name");
+				entity.Property(e => e.IdStatus).HasColumnName("Id_status");
 
-                entity.Property(e => e.IdDepartment)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("Id_department");
+				entity.Property(e => e.StatusName)
+					.HasMaxLength(50)
+					.IsUnicode(false)
+					.HasColumnName("status_name");
+			});
 
-                entity.Property(e => e.Price)
-                    .HasColumnType("decimal(10, 2)")
-                    .HasColumnName("price");
+			modelBuilder.Entity<Department>(entity =>
+			{
+				entity.ToTable("Department");
 
-                entity.HasOne(d => d.IdDepartmentNavigation)
-                    .WithMany(p => p.Diseases)
-                    .HasForeignKey(d => d.IdDepartment)
-                    .HasConstraintName("FK__Disease__Id_depa__300424B4");
-            });
+				entity.Property(e => e.DepartmentId)
+					.HasMaxLength(10)
+					.IsUnicode(false)
+					.HasColumnName("department_Id");
 
-            modelBuilder.Entity<DoctorDepartment>(entity =>
-            {
-                entity.HasKey(e => e.DepartmentId)
-                    .HasName("PK__DoctorDe__C222200A67E22EBC");
+				entity.Property(e => e.Department_Image)
+					.HasMaxLength(255)
+					.HasColumnName("department_image");
 
-                entity.ToTable("DoctorDepartment");
+				entity.Property(e => e.DepartmentName)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("department_name");
+			});
 
-                entity.Property(e => e.DepartmentId)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("department_Id");
+			modelBuilder.Entity<Disease>(entity =>
+			{
+				entity.HasKey(e => e.IdDisease)
+					.HasName("PK__Disease__19C3C497AB5E9BFF");
 
-                entity.Property(e => e.IdUser).HasColumnName("Id_user");
+				entity.ToTable("Disease");
 
-                entity.HasOne(d => d.Department)
-                    .WithOne(p => p.DoctorDepartment)
-                    .HasForeignKey<DoctorDepartment>(d => d.DepartmentId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__DoctorDep__depar__32E0915F");
+				entity.Property(e => e.IdDisease).HasColumnName("Id_disease");
 
-                entity.HasOne(d => d.IdUserNavigation)
-                    .WithMany(p => p.DoctorDepartments)
-                    .HasForeignKey(d => d.IdUser)
-                    .HasConstraintName("FK__DoctorDep__Id_us__33D4B598");
-            });
+				entity.Property(e => e.DiseaseName)
+					.HasMaxLength(255)
+					.IsUnicode(false)
+					.HasColumnName("disease_name");
 
-            modelBuilder.Entity<DoctorFeedbacksPatient>(entity =>
-            {
-                entity.HasKey(e => e.IdFeedbacks)
-                    .HasName("PK__DoctorFe__2C8D506C6D909272");
+				entity.Property(e => e.IdDepartment)
+					.HasMaxLength(10)
+					.IsUnicode(false)
+					.HasColumnName("Id_department");
 
-                entity.ToTable("DoctorFeedbacksPatient");
+				entity.Property(e => e.Price)
+					.HasColumnType("decimal(10, 2)")
+					.HasColumnName("price");
 
-                entity.Property(e => e.IdFeedbacks).HasColumnName("Id_feedbacks");
+				entity.HasOne(d => d.IdDepartmentNavigation)
+					.WithMany(p => p.Diseases)
+					.HasForeignKey(d => d.IdDepartment)
+					.HasConstraintName("FK__Disease__Id_depa__4316F928");
+			});
 
-                entity.Property(e => e.FeedbackContent)
-                    .HasColumnType("text")
-                    .HasColumnName("feedback_content");
+			modelBuilder.Entity<DoctorDepartment>(entity =>
+			{
+				entity.HasKey(e => e.DepartmentId)
+					.HasName("PK__DoctorDe__C222200ACB9CDDD7");
 
-                entity.Property(e => e.IdAppointment).HasColumnName("Id_appointment");
+				entity.ToTable("DoctorDepartment");
 
-                entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
+				entity.Property(e => e.DepartmentId)
+					.HasMaxLength(10)
+					.IsUnicode(false)
+					.HasColumnName("department_Id");
 
-                entity.Property(e => e.IdPatient).HasColumnName("Id_patient");
+				entity.Property(e => e.IdUser).HasColumnName("Id_user");
 
-                entity.HasOne(d => d.IdAppointmentNavigation)
-                    .WithMany(p => p.DoctorFeedbacksPatients)
-                    .HasForeignKey(d => d.IdAppointment)
-                    .HasConstraintName("FK__DoctorFee__Id_ap__412EB0B6");
+				entity.HasOne(d => d.Department)
+					.WithOne(p => p.DoctorDepartment)
+					.HasForeignKey<DoctorDepartment>(d => d.DepartmentId)
+					.OnDelete(DeleteBehavior.ClientSetNull)
+					.HasConstraintName("FK__DoctorDep__depar__45F365D3");
 
-                entity.HasOne(d => d.IdDoctorNavigation)
-                    .WithMany(p => p.DoctorFeedbacksPatientIdDoctorNavigations)
-                    .HasForeignKey(d => d.IdDoctor)
-                    .HasConstraintName("FK__DoctorFee__Id_do__3F466844");
+				entity.HasOne(d => d.IdUserNavigation)
+					.WithMany(p => p.DoctorDepartments)
+					.HasForeignKey(d => d.IdUser)
+					.HasConstraintName("FK__DoctorDep__Id_us__46E78A0C");
+			});
 
-                entity.HasOne(d => d.IdPatientNavigation)
-                    .WithMany(p => p.DoctorFeedbacksPatientIdPatientNavigations)
-                    .HasForeignKey(d => d.IdPatient)
-                    .HasConstraintName("FK__DoctorFee__Id_pa__403A8C7D");
-            });
+			modelBuilder.Entity<DoctorFeedbacksPatient>(entity =>
+			{
+				entity.HasKey(e => e.IdFeedbacks)
+					.HasName("PK__DoctorFe__2C8D506C573579F9");
 
-            modelBuilder.Entity<PatientReviewsDoctor>(entity =>
-            {
-                entity.HasKey(e => e.IdReviews)
-                    .HasName("PK__PatientR__3D824B492CCA2F43");
+				entity.ToTable("DoctorFeedbacksPatient");
 
-                entity.ToTable("PatientReviewsDoctor");
+				entity.Property(e => e.IdFeedbacks).HasColumnName("Id_feedbacks");
 
-                entity.Property(e => e.IdReviews).HasColumnName("Id_reviews");
+				entity.Property(e => e.FeedbackContent)
+					.HasColumnType("text")
+					.HasColumnName("feedback_content");
 
-                entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
+				entity.Property(e => e.IdAppointment).HasColumnName("Id_appointment");
 
-                entity.Property(e => e.IdReviewers).HasColumnName("Id_reviewers");
+				entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
 
-                entity.Property(e => e.ReviewContent)
-                    .HasColumnType("text")
-                    .HasColumnName("review_content");
+				entity.Property(e => e.IdPatient).HasColumnName("Id_patient");
 
-                entity.HasOne(d => d.IdDoctorNavigation)
-                    .WithMany(p => p.PatientReviewsDoctors)
-                    .HasForeignKey(d => d.IdDoctor)
-                    .HasConstraintName("FK__PatientRe__Id_do__36B12243");
-            });
+				entity.HasOne(d => d.IdAppointmentNavigation)
+					.WithMany(p => p.DoctorFeedbacksPatients)
+					.HasForeignKey(d => d.IdAppointment)
+					.HasConstraintName("FK__DoctorFee__Id_ap__5629CD9C");
 
-            modelBuilder.Entity<Roll>(entity =>
-            {
-                entity.ToTable("Roll");
+				entity.HasOne(d => d.IdDoctorNavigation)
+					.WithMany(p => p.DoctorFeedbacksPatientIdDoctorNavigations)
+					.HasForeignKey(d => d.IdDoctor)
+					.HasConstraintName("FK__DoctorFee__Id_do__5441852A");
 
-                entity.Property(e => e.RollId).HasColumnName("Roll_Id");
+				entity.HasOne(d => d.IdPatientNavigation)
+					.WithMany(p => p.DoctorFeedbacksPatientIdPatientNavigations)
+					.HasForeignKey(d => d.IdPatient)
+					.HasConstraintName("FK__DoctorFee__Id_pa__5535A963");
+			});
 
-                entity.Property(e => e.RollName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("roll_name");
-            });
+			modelBuilder.Entity<PatientReviewsDoctor>(entity =>
+			{
+				entity.HasKey(e => e.IdReviews)
+					.HasName("PK__PatientR__3D824B49730A0FAD");
 
-            OnModelCreatingPartial(modelBuilder);
-        }
+				entity.ToTable("PatientReviewsDoctor");
 
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-    }
+				entity.Property(e => e.IdReviews).HasColumnName("Id_reviews");
+
+				entity.Property(e => e.IdAppointment).HasColumnName("Id_appointment");
+
+				entity.Property(e => e.IdDoctor).HasColumnName("Id_doctor");
+
+				entity.Property(e => e.IdPatient).HasColumnName("Id_patient");
+
+				entity.Property(e => e.ReviewContent)
+					.HasColumnType("text")
+					.HasColumnName("review_content");
+
+				entity.HasOne(d => d.IdAppointmentNavigation)
+					.WithMany(p => p.PatientReviewsDoctors)
+					.HasForeignKey(d => d.IdAppointment)
+					.HasConstraintName("FK__PatientRe__Id_ap__5165187F");
+
+				entity.HasOne(d => d.IdDoctorNavigation)
+					.WithMany(p => p.PatientReviewsDoctorIdDoctorNavigations)
+					.HasForeignKey(d => d.IdDoctor)
+					.HasConstraintName("FK__PatientRe__Id_do__4F7CD00D");
+
+				entity.HasOne(d => d.IdPatientNavigation)
+					.WithMany(p => p.PatientReviewsDoctorIdPatientNavigations)
+					.HasForeignKey(d => d.IdPatient)
+					.HasConstraintName("FK__PatientRe__Id_pa__5070F446");
+			});
+
+			modelBuilder.Entity<Roll>(entity =>
+			{
+				entity.ToTable("Roll");
+
+				entity.Property(e => e.RollId).HasColumnName("Roll_Id");
+
+				entity.Property(e => e.RollName)
+					.HasMaxLength(50)
+					.IsUnicode(false)
+					.HasColumnName("roll_name");
+			});
+
+			OnModelCreatingPartial(modelBuilder);
+		}
+
+		partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+	}
 }

@@ -231,5 +231,43 @@ namespace Website_Mvc.Repositories
 
             return (0, "", "", "", "", "", "", 0); // Trả về giá trị mặc định nếu không tìm thấy thông tin bác sĩ
         }
+
+
+		public IEnumerable<string> GetDoctorDiseaseNames(int userId)
+		{
+			var diseaseNames = _context.Departments
+				.Where(d => d.DoctorDepartment != null && d.DoctorDepartment.IdUser == userId)
+				.SelectMany(d => d.Diseases.Select(di => di.DiseaseName))
+				.Distinct();
+
+			return diseaseNames;
+		}
+
+        public IEnumerable<(PatientReviewsDoctor review, string reviewerName)> GetDoctorReviews(int doctorId)
+        {
+            var doctorReviews = _context.PatientReviewsDoctors
+                .Where(review => review.IdDoctor == doctorId)
+                .ToList();
+
+            var reviewsWithReviewerNames = doctorReviews.Select(review =>
+            {
+                var reviewerName = "";
+
+                if (review.IdPatient != null)
+                {
+                    var reviewer = _context.AccountInfos
+                        .FirstOrDefault(accountInfo => accountInfo.IdUser == review.IdPatient);
+
+                    if (reviewer != null)
+                    {
+                        reviewerName = $"{reviewer.FirstName} {reviewer.LastName}";
+                    }
+                }
+
+                return (review, reviewerName);
+            });
+
+            return reviewsWithReviewerNames;
+        }
     }
 }

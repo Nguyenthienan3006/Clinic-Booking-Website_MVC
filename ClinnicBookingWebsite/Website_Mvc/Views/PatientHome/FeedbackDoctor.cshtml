@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:03 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Doccure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link href="~/Template/assets/img/favicon.png" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Template/assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/Template/assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Template/assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-12">
+                    <nav aria-label="breadcrumb" class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Review Doctor</li>
+                        </ol>
+                    </nav>
+                    <h2 class="breadcrumb-title">Review Doctor</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+    <div class="content">
+        <div class="container-fluid">
+            <!-- Write Review -->
+            <div class="write-review">
+                <!-- Write Review Form -->
+                <form id="formReview" action="@Url.Action("FeedbackDoctor","PatientHome")" method="post">
+
+                    <h4>Write a review for <strong>Dr. @ViewBag.Doctor</strong></h4>
+                    <div class="form-group">
+                        <label>Your review</label>
+                        <textarea name="reviewDoctor" class="form-control" required></textarea>
+                    </div>
+                    <hr>
+
+                    <div class="submit-section">
+                        <button type="submit" class="btn btn-primary submit-btn">Add Review</button>
+                    </div>
+                </form>
+                <!-- /Write Review Form -->
+            </div>
+        </div>
+        <!-- /Write Review -->
+        <!-- jQuery -->
+        <script src="~/Template/assets/js/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JS -->
+        <script src="~/Template/assets/js/popper.min.js"></script>
+        <script src="~/Template/assets/js/bootstrap.min.js"></script>
+
+        <!-- Sticky Sidebar JS -->
+        <script src="~/Template/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="~/Template/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+        <!-- Circle Progress JS -->
+        <script src="~/Template/assets/js/circle-progress.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="~/Template/assets/js/script.js"></script>
+</body>
+</html>

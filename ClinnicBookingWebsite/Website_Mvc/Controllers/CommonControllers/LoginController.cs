@@ -23,31 +23,41 @@ namespace Website_Mvc.Controllers
         public async Task<IActionResult> Index(string username, string password)
         {
             var user = _repository.Decentralization(username, password, HttpContext);
-
+            
             if (user != null)
             {
-                if (user.Roll == 1)
+                if(user.AccountStatus == 1)
                 {
-                    HttpContext.Session.SetString("UserRoleName", "Admin");
-                    return RedirectToAction("Index", "AdminHome");
-                }
-                else if (user.Roll == 2)
-                {
-                    HttpContext.Session.SetString("UserRoleName", "Doctor");
-                    return RedirectToAction("Index", "DoctorHome");
-                }
-                else if (user.Roll == 3)
-                {
-                    HttpContext.Session.SetString("UserRoleName", "Patient");
-                    return RedirectToAction("Index", "PatientHome");
-                }
+					if (user.Roll == 1)
+					{
+						HttpContext.Session.SetString("UserRoleName", "Admin");
+						TempData["LoginSuccessMessage"] = "Login Successful!";
+						return RedirectToAction("Index", "AdminHome");
+					}
+					else if (user.Roll == 2)
+					{
+						HttpContext.Session.SetString("UserRoleName", "Doctor");
+						TempData["LoginSuccessMessage"] = "Login Successful!";
+						return RedirectToAction("Index", "DoctorHome");
+					}
+					else if (user.Roll == 3)
+					{
+						HttpContext.Session.SetString("UserRoleName", "Patient");
+						TempData["LoginSuccessMessage"] = "Login Successful!";
+						return RedirectToAction("Index", "PatientHome");
+					}
+				}
+				else
+				{
+					TempData["LoginFailMessage"] = "Account Was Banned!";
+					return RedirectToAction("Index");
+				}
 
             }
             else
             {
-                // Người dùng không tồn tại hoặc tên đăng nhập/mật khẩu không đúng
-                // Xử lý lỗi tại đây, có thể redirect về trang login hoặc hiển thị thông báo lỗi
-                return RedirectToAction("Index");
+				TempData["LoginFailMessage"] = "Account Not Exists!";
+				return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
         }

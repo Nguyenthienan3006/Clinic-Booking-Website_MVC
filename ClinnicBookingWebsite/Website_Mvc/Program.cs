@@ -16,6 +16,8 @@ namespace Website_Mvc
 
             builder.Services.AddScoped<CommonRepository>();
             builder.Services.AddScoped<PatientRepository>();
+            builder.Services.AddScoped<DoctorRepository>();
+            builder.Services.AddScoped<AdminRepository>();
 
             //add session
             builder.Services.AddSession(); 

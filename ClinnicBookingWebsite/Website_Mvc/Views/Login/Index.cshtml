@@ -1,5 +1,6 @@
-﻿
-
+﻿@{
+	var loginFailMessage = TempData["LoginFailMessage"];
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,9 +28,34 @@
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.sliding-alert {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 16%;
+			padding: 15px; /* Khoảng cách giữa nội dung và biên của thông báo */
+			font-size: 18px; /* Kích thước chữ */
+			z-index: 1000;
+			transition: left 0.5s ease-in-out;
+			margin-top: 5%
+		}
 
+		.show-alert {
+			left: 0; /* Hiển thị thông báo ở lề trái */
+		}
+
+	</style>
 </head>
 <body class="account-page">
+
+	@if (loginFailMessage != null)
+	{
+		<div class="sliding-alert show-alert alert alert-danger alert-dismissible fade show" role="alert">
+			<strong>@loginFailMessage</strong>
+			
+		</div>
+	}
 
 	<!-- Main Wrapper -->
 	<div class="main-wrapper">
@@ -52,6 +78,10 @@
 									<div class="login-header">
 										<h3>Login <span>Doccure</span></h3>
 									</div>
+									
+
+
+
 									<form method="post" action="@Url.Action("Index", "Login")">
 										<div class="form-group form-focus">
 											<input type="text" name="username" class="form-control floating">
@@ -97,6 +127,19 @@
 
 	<!-- Custom JS -->
 	<script src="~/Template/assets/js/script.js"></script>
+
+		<script>
+		$(document).ready(function () {
+			// Hiển thị thông báo
+			$(".sliding-alert").addClass("show-alert");
+
+			// Tự động tắt thông báo sau 3 giây
+			setTimeout(function () {
+				$(".sliding-alert").removeClass("show-alert");
+			}, 3000);
+		});
+
+	</script>
 
 </body>
 

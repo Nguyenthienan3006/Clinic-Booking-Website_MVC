@@ -1,4 +1,17 @@
-﻿<!DOCTYPE html>
+﻿@{
+	var session = @Context.Session;
+
+	// Lấy các giá trị từ Session
+	var patientNum = session.GetString("patientNum");
+	var doctorNum = session.GetString("doctorNum");
+	var appointmentNum = session.GetString("appointmentNum");
+	var totalRevenue = session.GetString("totalRevenue");
+
+	var loginFailMessage = TempData["LoginSuccessMessage"];
+	
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:03 GMT -->
@@ -25,124 +38,33 @@
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.sliding-alert {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 14%;
+			padding: 15px; /* Khoảng cách giữa nội dung và biên của thông báo */
+			font-size: 18px; /* Kích thước chữ */
+			z-index: 1000;
+			transition: left 0.5s ease-in-out;
+			margin-top: 5%
+		}
 
+		.show-alert {
+			left: 0; /* Hiển thị thông báo ở lề trái */
+		}
+
+	</style>
 </head>
 <body>
-
-	<!-- Sidebar -->
-	<div class="sidebar" id="sidebar">
-		<div class="sidebar-inner slimscroll">
-			<div id="sidebar-menu" class="sidebar-menu">
-				<ul>
-					<li class="menu-title">
-						<span>Main</span>
-					</li>
-					<li class="active">
-						<a href="index.html"><i class="fe fe-home"></i> <span>Dashboard</span></a>
-					</li>
-					<li>
-						<a href="appointment-list.html"><i class="fe fe-layout"></i> <span>Appointments</span></a>
-					</li>
-					<li>
-						<a href="specialities.html"><i class="fe fe-users"></i> <span>Specialities</span></a>
-					</li>
-					<li>
-						<a href="doctor-list.html"><i class="fe fe-user-plus"></i> <span>Doctors</span></a>
-					</li>
-					<li>
-						<a href="patient-list.html"><i class="fe fe-user"></i> <span>Patients</span></a>
-					</li>
-					<li>
-						<a href="reviews.html"><i class="fe fe-star-o"></i> <span>Reviews</span></a>
-					</li>
-					<li>
-						<a href="transactions-list.html"><i class="fe fe-activity"></i> <span>Transactions</span></a>
-					</li>
-					<li>
-						<a href="settings.html"><i class="fe fe-vector"></i> <span>Settings</span></a>
-					</li>
-					<li class="submenu">
-						<a href="#"><i class="fe fe-document"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li><a href="invoice-report.html">Invoice Reports</a></li>
-						</ul>
-					</li>
-					<li class="menu-title">
-						<span>Pages</span>
-					</li>
-					<li>
-						<a href="profile.html"><i class="fe fe-user-plus"></i> <span>Profile</span></a>
-					</li>
-					<li class="submenu">
-						<a href="#"><i class="fe fe-document"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li><a href="login.html"> Login </a></li>
-							<li><a href="register.html"> Register </a></li>
-							<li><a href="forgot-password.html"> Forgot Password </a></li>
-							<li><a href="lock-screen.html"> Lock Screen </a></li>
-						</ul>
-					</li>
-					<li class="submenu">
-						<a href="#"><i class="fe fe-warning"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li><a href="error-404.html">404 Error </a></li>
-							<li><a href="error-500.html">500 Error </a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="blank-page.html"><i class="fe fe-file"></i> <span>Blank Page</span></a>
-					</li>
-					<li class="menu-title">
-						<span>UI Interface</span>
-					</li>
-					<li>
-						<a href="components.html"><i class="fe fe-vector"></i> <span>Components</span></a>
-					</li>
-					<li class="submenu">
-						<a href="#"><i class="fe fe-layout"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li><a href="form-basic-inputs.html">Basic Inputs </a></li>
-							<li><a href="form-input-groups.html">Input Groups </a></li>
-							<li><a href="form-horizontal.html">Horizontal Form </a></li>
-							<li><a href="form-vertical.html"> Vertical Form </a></li>
-							<li><a href="form-mask.html"> Form Mask </a></li>
-							<li><a href="form-validation.html"> Form Validation </a></li>
-						</ul>
-					</li>
-					<li class="submenu">
-						<a href="#"><i class="fe fe-table"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li><a href="tables-basic.html">Basic Tables </a></li>
-							<li><a href="data-tables.html">Data Table </a></li>
-						</ul>
-					</li>
-					<li class="submenu">
-						<a href="javascript:void(0);"><i class="fe fe-code"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
-						<ul style="display: none;">
-							<li class="submenu">
-								<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
-								<ul style="display: none;">
-									<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
-									<li class="submenu">
-										<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
-										<ul style="display: none;">
-											<li><a href="javascript:void(0);">Level 3</a></li>
-											<li><a href="javascript:void(0);">Level 3</a></li>
-										</ul>
-									</li>
-									<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);"> <span>Level 1</span></a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+	@if (loginFailMessage != null)
+	{
+		<div class="sliding-alert show-alert alert alert-success alert-dismissible fade show" role="alert">
+			<strong>@loginFailMessage</strong>
 		</div>
-	</div>
-	<!-- /Sidebar -->
+	}
+
 	<!-- Page Wrapper -->
 	<div class="page-wrapper">
 
@@ -152,9 +74,9 @@
 			<div class="page-header">
 				<div class="row">
 					<div class="col-sm-12">
-						<h3 class="page-title">Welcome Admin!</h3>
+						
 						<ul class="breadcrumb">
-							<li class="breadcrumb-item active">Dashboard</li>
+							<li class="breadcrumb-item active">Welcome Admin!</li>
 						</ul>
 					</div>
 				</div>
@@ -170,7 +92,7 @@
 									<i class="fe fe-users"></i>
 								</span>
 								<div class="dash-count">
-									<h3>168</h3>
+									<h3>@doctorNum</h3>
 								</div>
 							</div>
 							<div class="dash-widget-info">
@@ -190,7 +112,7 @@
 									<i class="fe fe-credit-card"></i>
 								</span>
 								<div class="dash-count">
-									<h3>487</h3>
+									<h3>@patientNum</h3>
 								</div>
 							</div>
 							<div class="dash-widget-info">
@@ -211,12 +133,12 @@
 									<i class="fe fe-money"></i>
 								</span>
 								<div class="dash-count">
-									<h3>485</h3>
+									<h3>@appointmentNum</h3>
 								</div>
 							</div>
 							<div class="dash-widget-info">
 
-								<h6 class="text-muted">Appointment</h6>
+								<h6 class="text-muted">Appointments</h6>
 								<div class="progress progress-sm">
 									<div class="progress-bar bg-danger w-50"></div>
 								</div>
@@ -232,7 +154,7 @@
 									<i class="fe fe-folder"></i>
 								</span>
 								<div class="dash-count">
-									<h3>$62523</h3>
+									<h3>$@totalRevenue</h3>
 								</div>
 							</div>
 							<div class="dash-widget-info">
@@ -246,40 +168,121 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-lg-6">
+			
 
-					<!-- Sales Chart -->
-					<div class="card card-chart">
+			<div class="row">
+				<div class="col-md-6 d-flex">
+
+					<!-- Account List -->
+					<div class="card card-table flex-fill">
 						<div class="card-header">
-							<h4 class="card-title">Revenue</h4>
+							<h4 class="card-title">Account List</h4>
 						</div>
 						<div class="card-body">
-							<div id="morrisArea"></div>
+							<div class="table-responsive">
+								<table class="table table-hover table-center mb-0">
+									<thead>
+										<tr>
+											<th>User Id</th>
+											<th>Username</th>
+											<th>Roll</th>
+											<th>Account Status</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										@foreach (var account in ViewBag.AccountList)
+										{
+											<tr>
+												<td>@account.IdUser</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient5.jpg" alt="User Image"></a>
+														<a href="profile.html">@account.Username</a>
+													</h2>
+												</td>
+
+												@if (@account.Roll == 1)
+												{
+													<td>Admin</td>
+												}
+												@if (@account.Roll == 2)
+												{
+													<td>Doctor</td>
+												}
+												@if (@account.Roll == 3)
+												{
+													<td>Patient</td>
+												}
+
+												@if(@account.AccountStatus == 0){
+													<td style="color: red">Deactive</td>
+												}
+												@if(@account.AccountStatus == 1){
+													<td style="color: green">Active</td>
+												}
+												<td>
+													<a href="@Url.Action("ChangeStatus", "AdminHome", new { currentStatus = @account.AccountStatus, accountId = @account.IdUser})">Change Status</a>
+												</td>
+											</tr>
+										}
+
+
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-					<!-- /Sales Chart -->
+					<!-- /Account List -->
 
 				</div>
-				<div class="col-md-12 col-lg-6">
+				<div class="col-md-6 d-flex">
 
-					<!-- Invoice Chart -->
-					<div class="card card-chart">
+					<!-- Department List -->
+					<div class="card  card-table flex-fill">
 						<div class="card-header">
-							<h4 class="card-title">Status</h4>
+							<h4 class="card-title">Department List</h4>
 						</div>
 						<div class="card-body">
-							<div id="morrisLine"></div>
+							<div class="table-responsive">
+								<table class="table table-hover table-center mb-0">
+									<thead>
+										<tr>
+											<th>Department Id</th>
+											<th>Department Name</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										@foreach (var department in ViewBag.DepartmentList)
+										{
+											<tr>
+												<td>@department.DepartmentId</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/features/feature-02.jpg" alt="User Image"></a>
+														<a href="profile.html">@department.DepartmentName</a>
+													</h2>
+												</td>
+
+
+											</tr>
+
+										}
+
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-					<!-- /Invoice Chart -->
+					<!-- /Department List -->
 
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 d-flex">
+				<div class="col-md-12 d-flex">
 
-					<!-- Recent Orders -->
+					<!-- Doctor List -->
 					<div class="card card-table flex-fill">
 						<div class="card-header">
 							<h4 class="card-title">Doctors List</h4>
@@ -289,109 +292,49 @@
 								<table class="table table-hover table-center mb-0">
 									<thead>
 										<tr>
+											<th>Doctor Id</th>
 											<th>Doctor Name</th>
-											<th>Speciality</th>
-											<th>Earned</th>
-											<th>Reviews</th>
+											<th>Date Of Birth</th>
+											<th>Phonenumber</th>
+											<th>Address</th>
+											<th>Email</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Ruby Perrin</a>
-												</h2>
-											</td>
-											<td>Dental</td>
-											<td>$3200.00</td>
-											<td>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star-o text-secondary"></i>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Darren Elder</a>
-												</h2>
-											</td>
-											<td>Dental</td>
-											<td>$3100.00</td>
-											<td>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star-o text-secondary"></i>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-03.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Deborah Angel</a>
-												</h2>
-											</td>
-											<td>Cardiology</td>
-											<td>$4000.00</td>
-											<td>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star-o text-secondary"></i>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-04.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Sofia Brient</a>
-												</h2>
-											</td>
-											<td>Urology</td>
-											<td>$3200.00</td>
-											<td>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star-o text-secondary"></i>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-05.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Marvin Campbell</a>
-												</h2>
-											</td>
-											<td>Orthopaedics</td>
-											<td>$3500.00</td>
-											<td>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star text-warning"></i>
-												<i class="fe fe-star-o text-secondary"></i>
-											</td>
-										</tr>
+										@foreach(var doctor in ViewBag.DoctorList)
+										{
+											<tr>
+												<td>@doctor.IdUser</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
+														<a href="profile.html">Dr. @doctor.FullName</a>
+													</h2>
+												</td>
+												<td>@doctor.DateOfBirth</td>
+												<td>@doctor.Phonenumber</td>
+												<td>@doctor.Address</td>
+												<td>@doctor.Email</td>
+												
+												
+											</tr>
+										}
+										
+										
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-					<!-- /Recent Orders -->
+					<!-- /Doctor List -->
 
 				</div>
-				<div class="col-md-6 d-flex">
+			</div>
 
-					<!-- Feed Activity -->
+			<div class="row">
+				<div class="col-md-12 d-flex">
+
+					<!-- Patient List -->
 					<div class="card  card-table flex-fill">
 						<div class="card-header">
 							<h4 class="card-title">Patients List</h4>
@@ -401,81 +344,49 @@
 								<table class="table table-hover table-center mb-0">
 									<thead>
 										<tr>
+											<th>Patient Id</th>
 											<th>Patient Name</th>
-											<th>Phone</th>
-											<th>Last Visit</th>
-											<th>Paid</th>
+											<th>Date Of Birth</th>
+											<th>Phonenumber</th>
+											<th>Address</th>
+											<th>Email</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient1.jpg" alt="User Image"></a>
-													<a href="profile.html">Charlene Reed </a>
-												</h2>
-											</td>
-											<td>8286329170</td>
-											<td>20 Oct 2019</td>
-											<td class="text-right">$100.00</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient2.jpg" alt="User Image"></a>
-													<a href="profile.html">Travis Trimble </a>
-												</h2>
-											</td>
-											<td>2077299974</td>
-											<td>22 Oct 2019</td>
-											<td class="text-right">$200.00</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient3.jpg" alt="User Image"></a>
-													<a href="profile.html">Carl Kelly</a>
-												</h2>
-											</td>
-											<td>2607247769</td>
-											<td>21 Oct 2019</td>
-											<td class="text-right">$250.00</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient4.jpg" alt="User Image"></a>
-													<a href="profile.html"> Michelle Fairfax</a>
-												</h2>
-											</td>
-											<td>5043686874</td>
-											<td>21 Sep 2019</td>
-											<td class="text-right">$150.00</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient5.jpg" alt="User Image"></a>
-													<a href="profile.html">Gina Moore</a>
-												</h2>
-											</td>
-											<td>9548207887</td>
-											<td>18 Sep 2019</td>
-											<td class="text-right">$350.00</td>
-										</tr>
+										@foreach (var patient in ViewBag.PatientList)
+										{
+											<tr>
+												<td>@patient.IdUser</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient1.jpg" alt="User Image"></a>
+														<a href="profile.html">@patient.FullName</a>
+													</h2>
+												</td>
+												
+												<td>@patient.DateOfBirth</td>
+												<td>@patient.Phonenumber</td>
+												<td>@patient.Address</td>
+												<td>@patient.Email</td>
+
+
+											</tr>
+										}
+
+
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-					<!-- /Feed Activity -->
+					<!-- /Patient List -->
 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 
-					<!-- Recent Orders -->
+					<!-- Appointment List -->
 					<div class="card card-table">
 						<div class="card-header">
 							<h4 class="card-title">Appointment List</h4>
@@ -485,148 +396,41 @@
 								<table class="table table-hover table-center mb-0">
 									<thead>
 										<tr>
-											<th>Doctor Name</th>
-											<th>Speciality</th>
-											<th>Patient Name</th>
-											<th>Apointment Time</th>
+											<th>Appointment Id</th>
+											<th>Doctor</th>
+											<th>Patient</th>
+											<th>Disease</th>
+											<th>Patient's Description</th>
+											<th>Appointment Time</th>
 											<th>Status</th>
-											<th class="text-right">Amount</th>
+											<th>Total Price</th>
+											
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Ruby Perrin</a>
-												</h2>
-											</td>
-											<td>Dental</td>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient1.jpg" alt="User Image"></a>
-													<a href="profile.html">Charlene Reed </a>
-												</h2>
-											</td>
-											<td>9 Nov 2019 <span class="text-primary d-block">11.00 AM - 11.15 AM</span></td>
-											<td>
-												<div class="status-toggle">
-													<input type="checkbox" id="status_1" class="check" checked>
-													<label for="status_1" class="checktoggle">checkbox</label>
-												</div>
-											</td>
-											<td class="text-right">
-												$200.00
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Darren Elder</a>
-												</h2>
-											</td>
-											<td>Dental</td>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient2.jpg" alt="User Image"></a>
-													<a href="profile.html">Travis Trimble </a>
-												</h2>
-											</td>
+										@foreach (var app in ViewBag.AppointmentList)
+										{
+											<tr>
 
-											<td>5 Nov 2019 <span class="text-primary d-block">11.00 AM - 11.35 AM</span></td>
-											<td>
-												<div class="status-toggle">
-													<input type="checkbox" id="status_2" class="check" checked>
-													<label for="status_2" class="checktoggle">checkbox</label>
-												</div>
-											</td>
-											<td class="text-right">
-												$300.00
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-03.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Deborah Angel</a>
-												</h2>
-											</td>
-											<td>Cardiology</td>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient3.jpg" alt="User Image"></a>
-													<a href="profile.html">Carl Kelly</a>
-												</h2>
-											</td>
-											<td>11 Nov 2019 <span class="text-primary d-block">12.00 PM - 12.15 PM</span></td>
-											<td>
-												<div class="status-toggle">
-													<input type="checkbox" id="status_3" class="check" checked>
-													<label for="status_3" class="checktoggle">checkbox</label>
-												</div>
-											</td>
-											<td class="text-right">
-												$150.00
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-04.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Sofia Brient</a>
-												</h2>
-											</td>
-											<td>Urology</td>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient4.jpg" alt="User Image"></a>
-													<a href="profile.html"> Michelle Fairfax</a>
-												</h2>
-											</td>
-											<td>7 Nov 2019<span class="text-primary d-block">1.00 PM - 1.20 PM</span></td>
-											<td>
-												<div class="status-toggle">
-													<input type="checkbox" id="status_4" class="check" checked>
-													<label for="status_4" class="checktoggle">checkbox</label>
-												</div>
-											</td>
-											<td class="text-right">
-												$150.00
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/doctors/doctor-thumb-05.jpg" alt="User Image"></a>
-													<a href="profile.html">Dr. Marvin Campbell</a>
-												</h2>
-											</td>
-											<td>Orthopaedics</td>
-											<td>
-												<h2 class="table-avatar">
-													<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient5.jpg" alt="User Image"></a>
-													<a href="profile.html">Gina Moore</a>
-												</h2>
-											</td>
+												<td>@app.IdAppointment</td>
+												<td>@app.IdDoctorNavigation.AccountInfo.FullName</td>
+												<td>@app.IdPatientNavigation.AccountInfo.FullName</td>
+												<td>@app.IdDiseaseNavigation.DiseaseName</td>
+												<td>@app.PatientConditionDescription</td>
+												<td>@app.AppointmentTime</td>
+												<td>@app.StatusNavigation.StatusName</td>
+												<td>@app.TotalPrice</td>
 
-											<td>15 Nov 2019 <span class="text-primary d-block">1.00 PM - 1.15 PM</span></td>
-											<td>
-												<div class="status-toggle">
-													<input type="checkbox" id="status_5" class="check" checked>
-													<label for="status_5" class="checktoggle">checkbox</label>
-												</div>
-											</td>
-											<td class="text-right">
-												$200.00
-											</td>
-										</tr>
+											</tr>
+										}
+										
+										
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-					<!-- /Recent Orders -->
+					<!-- /Appointment List -->
 
 				</div>
 			</div>
@@ -653,6 +457,19 @@
 
 	<!-- Custom JS -->
 	<script src="~/Template/assets/js/script.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Hiển thị thông báo
+			$(".sliding-alert").addClass("show-alert");
+
+			// Tự động tắt thông báo sau 3 giây
+			setTimeout(function () {
+				$(".sliding-alert").removeClass("show-alert");
+			}, 3000);
+		});
+
+	</script>
 
 </body>
 

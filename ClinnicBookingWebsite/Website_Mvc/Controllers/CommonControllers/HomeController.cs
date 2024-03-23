@@ -19,8 +19,7 @@ namespace Website_Mvc.Controllers
 
         public IActionResult Index()
         {
-			HttpContext.Session.Remove("UserRole");
-			HttpContext.Session.Remove("UserRoleName");
+            HttpContext.Session.Clear();
 
 			return View();
         }
@@ -55,8 +54,17 @@ namespace Website_Mvc.Controllers
         public IActionResult ViewProfile(int id)
         {
             var doctor = _commonRepository.GetDoctorProfileById(id);
+            var doctorDisease = _commonRepository.GetDoctorDiseaseNames(id);
+            var doctorReview = _commonRepository.GetDoctorReviews(id);
 
-            return View("DoctorProfile", doctor);
+            var viewModel = new DoctorProfileViewModel
+            {
+                Doctor = doctor,
+                DoctorDiseases = doctorDisease,
+                GetDoctorReviews = doctorReview
+            };
+
+            return View("DoctorProfile", viewModel);
         }
     }
 }

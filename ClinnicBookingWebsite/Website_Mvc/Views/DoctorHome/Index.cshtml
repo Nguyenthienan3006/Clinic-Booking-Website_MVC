@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@model Website_Mvc.Models.DoctorViewModel
+@{
+	DateTime today = DateTime.Today;
+	var loginFailMessage = TempData["LoginSuccessMessage"];
+	var FeedbackSuccessfulMessage = TempData["FeedbackSuccessfulMessage"];
+}
+
+
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:03 GMT -->
@@ -25,14 +33,42 @@
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.sliding-alert {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 16%;
+			padding: 15px; /* Khoảng cách giữa nội dung và biên của thông báo */
+			font-size: 18px; /* Kích thước chữ */
+			z-index: 1000;
+			transition: left 0.5s ease-in-out;
+			margin-top: 5%
+		}
 
+		.show-alert {
+			left: 0; /* Hiển thị thông báo ở lề trái */
+		}
+
+	</style>
 </head>
 <body>
-
+	@if (loginFailMessage != null)
+	{
+		<div class="sliding-alert show-alert alert alert-success alert-dismissible fade show" role="alert">
+			<strong>@loginFailMessage</strong>
+		</div>
+	}
+	@if (FeedbackSuccessfulMessage != null)
+	{
+		<div class="sliding-alert show-alert alert alert-success alert-dismissible fade show" role="alert">
+			<strong>@FeedbackSuccessfulMessage</strong>
+		</div>
+	}
 	<!-- Main Wrapper -->
 	<div class="main-wrapper">
 
-		
+
 		<!-- Breadcrumb -->
 		<div class="breadcrumb-bar">
 			<div class="container-fluid">
@@ -62,13 +98,13 @@
 							<div class="widget-profile pro-widget-content">
 								<div class="profile-info-widget">
 									<a href="#" class="booking-doc-img">
-										<img src="~/Template/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+										<img src="~/Template/assets/img/doctors/@Model.Doctor.UserImage" alt="User Image">
 									</a>
 									<div class="profile-det-info">
-										<h3>Dr. Darren Elder</h3>
+										<h3>Dr. @Model.Doctor.FullName</h3>
 
 										<div class="patient-details">
-											<h5 class="mb-0">BDS, MDS - Oral & Maxillofacial Surgery</h5>
+											<h5 class="mb-0">@Model.Doctor.DepartmentName</h5>
 										</div>
 									</div>
 								</div>
@@ -82,67 +118,7 @@
 												<span>Dashboard</span>
 											</a>
 										</li>
-										<li>
-											<a href="appointments.html">
-												<i class="fas fa-calendar-check"></i>
-												<span>Appointments</span>
-											</a>
-										</li>
-										<li>
-											<a href="my-patients.html">
-												<i class="fas fa-user-injured"></i>
-												<span>My Patients</span>
-											</a>
-										</li>
-										<li>
-											<a href="schedule-timings.html">
-												<i class="fas fa-hourglass-start"></i>
-												<span>Schedule Timings</span>
-											</a>
-										</li>
-										<li>
-											<a href="invoices.html">
-												<i class="fas fa-file-invoice"></i>
-												<span>Invoices</span>
-											</a>
-										</li>
-										<li>
-											<a href="reviews.html">
-												<i class="fas fa-star"></i>
-												<span>Reviews</span>
-											</a>
-										</li>
-										<li>
-											<a href="chat-doctor.html">
-												<i class="fas fa-comments"></i>
-												<span>Message</span>
-												<small class="unread-msg">23</small>
-											</a>
-										</li>
-										<li>
-											<a href="doctor-profile-settings.html">
-												<i class="fas fa-user-cog"></i>
-												<span>Profile Settings</span>
-											</a>
-										</li>
-										<li>
-											<a href="social-media.html">
-												<i class="fas fa-share-alt"></i>
-												<span>Social Media</span>
-											</a>
-										</li>
-										<li>
-											<a href="doctor-change-password.html">
-												<i class="fas fa-lock"></i>
-												<span>Change Password</span>
-											</a>
-										</li>
-										<li>
-											<a href="index-2.html">
-												<i class="fas fa-sign-out-alt"></i>
-												<span>Logout</span>
-											</a>
-										</li>
+
 									</ul>
 								</nav>
 							</div>
@@ -167,7 +143,7 @@
 													</div>
 													<div class="dash-widget-info">
 														<h6>Total Patient</h6>
-														<h3>1500</h3>
+														<h3>@Model.PatientCount</h3>
 														<p class="text-muted">Till Today</p>
 													</div>
 												</div>
@@ -181,9 +157,9 @@
 														</div>
 													</div>
 													<div class="dash-widget-info">
-														<h6>Today Patient</h6>
-														<h3>160</h3>
-														<p class="text-muted">06, Nov 2019</p>
+														<h6>Today Appointment</h6>
+														<h3>@Model.TodayAppointmentCount</h3>
+														<p class="text-muted">@today.ToShortDateString()</p>
 													</div>
 												</div>
 											</div>
@@ -197,8 +173,8 @@
 													</div>
 													<div class="dash-widget-info">
 														<h6>Appoinments</h6>
-														<h3>85</h3>
-														<p class="text-muted">06, Apr 2019</p>
+														<h3>@Model.TotalAppointmentCount</h3>
+														<p class="text-muted">Till Today</p>
 													</div>
 												</div>
 											</div>
@@ -216,10 +192,16 @@
 									<!-- Appointment Tab -->
 									<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
 										<li class="nav-item">
-											<a class="nav-link active" href="#upcoming-appointments" data-toggle="tab">Upcoming</a>
+											<a class="nav-link active" href="#upcoming-appointments" data-toggle="tab">All</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="#today-appointments" data-toggle="tab">Today</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#doctor-feedback" data-toggle="tab">Doctor Feedback</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#doctor-review" data-toggle="tab">Doctor's Review</a>
 										</li>
 									</ul>
 									<!-- /Appointment Tab -->
@@ -236,169 +218,61 @@
 																<tr>
 																	<th>Patient Name</th>
 																	<th>Appt Date</th>
-																	<th>Purpose</th>
-																	<th>Type</th>
+																	<th>Disease</th>
+																	<th>Description</th>
+																	<th>Status</th>
 																	<th class="text-center">Paid Amount</th>
 																	<th></th>
 																</tr>
 															</thead>
 															<tbody>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Richard Wilson <span>#PT0016</span></a>
-																		</h2>
-																	</td>
-																	<td>11 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$150</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
+																@if (Model != null && Model.GetAppointmentList != null && Model.GetAppointmentList.Any())
+																{
+																	@foreach (var appointment in Model.GetAppointmentList)
+																	{
 
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient1.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Charlene Reed <span>#PT0001</span></a>
-																		</h2>
-																	</td>
-																	<td>3 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$200</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
+																		<tr>
+																			<td>
+																				<h2 class="table-avatar">
+																					<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient1.jpg" alt="User Image"></a>
+																					<a href="patient-profile.html">@appointment.PatientFirstName @appointment.PatientLastName <span>#PT00@(appointment.IdPatient)</span></a>
+																				</h2>
+																			</td>
+																			<td>@(appointment.AppointmentDate.HasValue ? appointment.AppointmentDate.Value.ToShortDateString() : "N/A") <span class="d-block text-info">@appointment.AppointmentTime</span></td>
+																			<td>@appointment.DiseaseName</td>
+																			<td>@appointment.Description</td>
+																			<td>@appointment.StatusName</td>
+																			<td class="text-center">@appointment.TotalPrice</td>
+																			<td class="text-right">
+																				<div class="table-action">
+																					@if (appointment.StatusName == "Pending")
+																					{
+																						<a href="@Url.Action("AcceptAppointment", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-success-light">
+																							<i class="fas fa-check"></i> Accept
+																						</a>
+																						<a href="@Url.Action("CancelAppointment", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-danger-light">
+																							<i class="fas fa-times"></i> Cancel
+																						</a>
+																					}
+																					else if (appointment.StatusName == "Accepted")
+																					{
+																						<a href="@Url.Action("WriteFeedback", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-success-light">
+																							<i class="fas fa-check"></i> Complete and Give feedback
+																						</a>
+																					}
+																					else if (appointment.StatusName == "Rejected")
+																					{
+																					}
+																					else if (appointment.StatusName == "Completed")
+																					{
+																						<span>Already Feedback</span>
+																					}
+																				</div>
+																			</td>
+																		</tr>
+																	}
+																}
 
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient2.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Travis Trimble  <span>#PT0002</span></a>
-																		</h2>
-																	</td>
-																	<td>1 Nov 2019 <span class="d-block text-info">1.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$75</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient3.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Carl Kelly <span>#PT0003</span></a>
-																		</h2>
-																	</td>
-																	<td>30 Oct 2019 <span class="d-block text-info">9.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$100</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient4.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Michelle Fairfax <span>#PT0004</span></a>
-																		</h2>
-																	</td>
-																	<td>28 Oct 2019 <span class="d-block text-info">6.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$350</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient5.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Gina Moore <span>#PT0005</span></a>
-																		</h2>
-																	</td>
-																	<td>27 Oct 2019 <span class="d-block text-info">8.00 AM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$250</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
 															</tbody>
 														</table>
 													</div>
@@ -416,169 +290,60 @@
 																<tr>
 																	<th>Patient Name</th>
 																	<th>Appt Date</th>
-																	<th>Purpose</th>
-																	<th>Type</th>
+																	<th>Disease</th>
+																	<th>Description</th>
+																	<th>Status</th>
 																	<th class="text-center">Paid Amount</th>
 																	<th></th>
 																</tr>
 															</thead>
+
 															<tbody>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient6.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Elsie Gilley <span>#PT0006</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">6.00 PM</span></td>
-																	<td>Fever</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$300</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient7.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Joan Gardner <span>#PT0006</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">5.00 PM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$100</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient8.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Daniel Griffing <span>#PT0007</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">3.00 PM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$75</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient9.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Walter Roberson <span>#PT0008</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">1.00 PM</span></td>
-																	<td>General</td>
-																	<td>Old Patient</td>
-																	<td class="text-center">$350</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient10.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Robert Rhodes <span>#PT0010</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$175</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient11.jpg" alt="User Image"></a>
-																			<a href="patient-profile.html">Harry Williams <span>#PT0011</span></a>
-																		</h2>
-																	</td>
-																	<td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
-																	<td>General</td>
-																	<td>New Patient</td>
-																	<td class="text-center">$450</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-
-																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																				<i class="fas fa-check"></i> Accept
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																				<i class="fas fa-times"></i> Cancel
-																			</a>
-																		</div>
-																	</td>
-																</tr>
+																@if (Model.DoctorTodayAppointments != null && Model.DoctorTodayAppointments.Any())
+																{
+																	@foreach (var appointment in Model.DoctorTodayAppointments)
+																	{
+																		<tr>
+																			<td>
+																				<h2 class="table-avatar">
+																					<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient10.jpg" alt="User Image"></a>
+																					<a href="patient-profile.html">@appointment.PatientFirstName @appointment.PatientLastName <span>#PT000@(appointment.IdPatient)</span></a>
+																				</h2>
+																			</td>
+																			<td>@(appointment.AppointmentDate.HasValue ? appointment.AppointmentDate.Value.ToShortDateString() : "N/A") <span class="d-block text-info">@appointment.AppointmentTime</span></td>
+																			<td>@appointment.DiseaseName</td>
+																			<td>@appointment.Description</td>
+																			<td>@appointment.StatusName</td>
+																			<td class="text-center">@appointment.TotalPrice</td>
+																			<td class="text-right">
+																				<div class="table-action">
+																					@if (appointment.StatusName == "Pending")
+																					{
+																						<a href="@Url.Action("AcceptAppointment", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-success-light">
+																							<i class="fas fa-check"></i> Accept
+																						</a>
+																						<a href="@Url.Action("CancelAppointment", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-danger-light">
+																							<i class="fas fa-times"></i> Cancel
+																						</a>
+																					}
+																					else if (appointment.StatusName == "Accepted")
+																					{
+																						<a href="@Url.Action("WriteFeedback", "DoctorHome", new { appointmentId = appointment.IdAppointment })" class="btn btn-sm bg-success-light">
+																							<i class="fas fa-check"></i> Complete and Give feedback
+																						</a>
+																					}
+																					else if (appointment.StatusName == "Rejected")
+																					{
+																					}
+																					else if (appointment.StatusName == "Completed")
+																					{
+																						<span>Already Feedback</span>
+																					}
+																				</div>
+																			</td>
+																		</tr>
+																	}
+																}
 															</tbody>
 														</table>
 													</div>
@@ -586,7 +351,81 @@
 											</div>
 										</div>
 										<!-- /Today Appointment Tab -->
+										<div class="tab-pane" id="doctor-feedback">
+											<div class="card card-table mb-0">
+												<div class="card-body">
+													<div class="table-responsive">
+														<table class="table table-hover table-center mb-0">
+															<thead>
+																<tr>
+																	<th>ID Appointment</th>
+																	<th>Patient Name</th>
+																	<th>Disease Name</th>
+																	<th>Appointment Date</th>
+																	<th>Feedback Content</th>
+																</tr>
+															</thead>
+															<tbody>
+																@foreach (var feedback in Model.GetDoctorFeedbacks)
+																{
+																	<tr>
+																		<td>@feedback.IdAppointment</td>
+																		<td>
+																			<h2 class="table-avatar">
+																				<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient1.jpg" alt="User Image"></a>
+																				<a href="patient-profile.html">@feedback.PatientName <span></span></a>
+																			</h2>
+																		</td>
 
+																		<td>@feedback.DiseaseName</td>
+																		<td>@feedback.AppointmentDate</td>
+																		<td class="text-center">@feedback.FeedbackContent</td>
+																	</tr>
+																}
+
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="doctor-review">
+											<div class="card card-table mb-0">
+												<div class="card-body">
+													<div class="table-responsive">
+														<table class="table table-hover table-center mb-0">
+															<thead>
+																<tr>
+																	<th>ID Review</th>
+																	<th>Patient Name</th>
+																	<th>Email</th>
+																	<th>Review Content</th>
+																</tr>
+															</thead>
+															<tbody>
+																@foreach (var review in Model.GetDoctorReviews)
+																{
+																	<tr>
+																		<td>@review.IdReviews</td>
+																		<td>
+																			<h2 class="table-avatar">
+																				<a href="patient-profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Template/assets/img/patients/patient1.jpg" alt="User Image"></a>
+																				<a href="patient-profile.html">@review.PatientName</a>
+																			</h2>
+																		</td>
+																		<td>@review.Email</td>
+																		<td>@review.ReviewContent</td>
+																	</tr>
+																}
+
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -599,7 +438,7 @@
 
 		</div>
 		<!-- /Page Content -->
-		
+
 
 	</div>
 	<!-- /Main Wrapper -->
@@ -619,7 +458,18 @@
 
 	<!-- Custom JS -->
 	<script src="~/Template/assets/js/script.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Hiển thị thông báo
+			$(".sliding-alert").addClass("show-alert");
 
+			// Tự động tắt thông báo sau 3 giây
+			setTimeout(function () {
+				$(".sliding-alert").removeClass("show-alert");
+			}, 3000);
+		});
+
+	</script>
 </body>
 
 <!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:09 GMT -->

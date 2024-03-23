@@ -1,0 +1,44 @@
+﻿<!-- Breadcrumb -->
+<div class="breadcrumb-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-12">
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Review Doctor</li>
+                    </ol>
+                </nav>
+                <h2 class="breadcrumb-title">Feedback Patient</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadcrumb -->
+<br />
+<div class="write-review">
+	<h4>Write a feedback for patient <strong>@ViewBag.patientInfo.PatientName</strong></h4>
+
+	<!-- Write Review Form -->
+	<form action="@Url.Action("FeedbackPatient", "DoctorHome")">
+		<input type="hidden" name="IdAppointment" value="@ViewBag.patientInfo.IdAppointment">
+		<input type="hidden" name="DoctorId" value="@ViewBag.patientInfo.DoctorId">
+		<input type="hidden" name="PatientId" value="@ViewBag.patientInfo.PatientId">
+
+
+
+		<div class="form-group">
+			<label>Your feedback</label>
+			<textarea id="review_desc" name="FeedbackContent" maxlength="100" class="form-control"></textarea>
+
+			<div class="d-flex justify-content-between mt-3"><small class="text-muted"><span id="chars">100</span> characters remaining</small></div>
+		</div>
+		<hr>
+		<div class="submit-section">
+			<button type="submit" class="btn btn-primary submit-btn">Add Review</button>
+		</div>
+	</form>
+	<!-- /Write Review Form -->
+
+</div>
+
